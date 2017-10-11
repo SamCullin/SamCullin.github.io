@@ -1,4 +1,57 @@
 let config = {};
+var makeExperience = function(name,time,possition, link,details){
+  return {
+    name: name,
+    time: time,
+    possition: possition,
+    link: link,
+    details: details
+  }
+}
+config.Profile = {
+  name: "Sam Cullin",
+  age: "21",
+  location: "3127, Melbourne, Australia",
+  about: `A passionate graduate with a drive to learn and create. Always looking for places to improve upon and learn.  With no lack of persistence and drive. Which I have shown through my own personally motivated projects.
+  More experience than the average graduate having brought a full stack system to market with a small team of like minded passionate people.
+  `,
+  img: ""
+}
+config.WorkExperience = [
+  makeExperience("Findas","2016-Now","Founder",null,[
+    "Working in a small team",
+    "Project Management",
+    "Development life cycles",
+    "Communication",
+    "Teaching",
+    "Software Design and Architecture",
+    "Persistance and drive"
+  ]),
+  makeExperience("DieCut Engineering","2014-Now","General Hand",null,[
+    "Wide Range of Experience",
+    "Book keeping",
+    "Managin Customers and Work Flow",
+    "IT Support"
+  ])
+]
+config.Knowledge = {
+  "C":8,
+  "Python": 6,
+  "Swift":9,
+  "PHP": 7,
+  "CSS": 6,
+  "Angular": 5,
+  "NodeJS" : 8,
+  "Java": 8,
+  "JavaScript": 8,
+  "SQL": 8,
+  "pandas": 7,
+  "FireBase": 8,
+  "Bootstrap": 7,
+  "Singleton Pattern": 8,
+  "MVC Pattern": 7,
+  "JQuery": 5
+}
 config.particle = {
     "particles": {
       "number": {

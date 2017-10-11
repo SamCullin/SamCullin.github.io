@@ -5,80 +5,108 @@
 	z-index: 1000;
 
 }
-#content {
-	background-color: blue;
-	margin-top: 100vh;
-}
 
-.fullHeight {
-	height: 100vh;
-}
-.center-horizonal {
-	text-align: center;
+/* Header CSS */
+	.fullHeight {height: 100vh;}
+	.center-horizonal {text-align: center;margin: auto;}
+	img.center-horizonal {display: block;}
+	canvas{display:block;z-index: 0;}
+	#head {overflow: hidden;z-index: 0;}
+	#upArrow {height: 50px;width: 50px;}
+	#header-title > h1 , #header-title > h2{color: white;text-align: center;}
+	#particles-js {
+		height: 100%;
+		background-image: url('./../images/headerImage.jpeg');
+		background-size: cover;
+		z-index: 0;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;}
+	#header-title {
+		display: block;
+		position: absolute;
+		top:17%;
+		left:25%;
+		z-index: 2;
+		width: 50%;}
+	#header-down-button {
+		display: block;
+		position: absolute;
+		background-color: lightslategray;
+		height: 50px;
+		bottom: 0;
+		z-index: 3;}
+
+/* Rating Sections CSS */
+	.RatingDots	{width: 120px}
+	.RatingTag	{width:	120px}
+	.rateDot{height: 12px;width: 12px;}
+	.rateDotGray{filter: invert(70%);-webkit-filter: invert(70%);}
+	.RatingItem>div , .RatingItem>p{
+		margin:0;
+		padding: 0;
+		float:left;}
+	.RatingItem {
+		width: 240px;
+		margin-left:20px;
+		margin-right:20px;
+		margin-top:10px;
+		margin-bottom:10px;
+		float:left;}
+
+
+
+/* Profile Section CSS */
+/* Potentialy turn into css grid */
+
+
+/*Label CSS*/
+.label-title{float:left;width:20%}
+.label-text{float:left;width:80%}
+.sam-label{width: 100%}
+
+
+
+
+
+/* General CSS */
+#content {
 	margin: auto;
 }
-img.center-horizonal {
-	display: block;
-}
 
-#head {
-	overflow: hidden;
-	position: fixed;
-	z-index: 0;
-	top: 0;
-}
-canvas{
-	display:block;
-	z-index: 0;
 
-}
-#particles-js {
-	height: 100%;
-	background-image: url('./../images/headerImage.jpeg');
-	background-size: cover;
-	z-index: 0;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-}
-#header-title {
-	display: block;
-	position: absolute;
-	top:17%;
-	left:25%;
-	z-index: 2;
-	width: 50%;
-}
-#header-down-button {
-	display: block;
-	position: absolute;
-	background-color: lightslategray;
-	height: 50px;
-	bottom: 0;
-	z-index: 3;
 
-}
 
-#upArrow {
-	height: 50px;
-	width: 50px;
 
-}
 
-@media only screen and (min-width: 700px){
+/* Small Screen CSS */
+@media only screen and (max-width: 600px){
 	#header-down-button {
 		right: 0px;
 	}
+	.section{
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+	#content{
+		width: 95%;
+	}
 }
 
+
+/* Large Screen CSS */
 @media only screen and (min-width: 600px){
 	#header-down-button {
 		right: 10%;
 		width:150px;
 	}
+	.section{
+		padding-right: 15%;
+		padding-left: 15%;
+	}
+	#content { 
+		
+		width: 80%;
+	}
 }
 
 
-#header-title > h1 , #header-title > h2{
-	color: white;
-	text-align: center;
-}
