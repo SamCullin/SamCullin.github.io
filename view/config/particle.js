@@ -5,7 +5,7 @@ config.particle = {
         "value": 80,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 1000
         }
       },
       "color": {
@@ -68,40 +68,40 @@ config.particle = {
       }
     },
     "interactivity": {
-      "detect_on": "canvas",
+      "detect_on": "window",
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "repulse"
+          "mode": "grab"
         },
         "onclick": {
           "enable": true,
-          "mode": "push"
+          "mode": "repulse"
         },
         "resize": true
       },
       "modes": {
         "grab": {
-          "distance": 400,
+          "distance": 200,
           "line_linked": {
-            "opacity": 1
+            "opacity": .6
           }
         },
         "bubble": {
-          "distance": 400,
+          "distance": 1000,
           "size": 40,
-          "duration": 2,
+          "duration": 1,
           "opacity": 8,
-          "speed": 3
+          "speed": 7
         },
         "repulse": {
-          "distance": 1
+          "distance": 220
         },
         "push": {
           "particles_nb": 4
         },
         "remove": {
-          "particles_nb": 2
+          "particles_nb": 30
         }
       }
     },
