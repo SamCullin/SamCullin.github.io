@@ -1,5 +1,9 @@
+
+
+
+
 * {
-	margin: 0;
+	margin: auto;
 	padding: 0;
 	width: 100%;
 	z-index: 1000;
@@ -44,33 +48,47 @@
 	.RatingItem>div , .RatingItem>p{
 		margin:0;
 		padding: 0;
-		float:left;}
+		display:inline-block;}
 	.RatingItem {
 		width: 240px;
 		margin-left:20px;
 		margin-right:20px;
 		margin-top:10px;
 		margin-bottom:10px;
-		float:left;}
+		display:inline-block;}
 
 
 
 /* Profile Section CSS */
 /* Potentialy turn into css grid */
 
+/* Expericen Section CSS */
+
 
 /*Label CSS*/
-.label-title{float:left;width:20%}
-.label-text{float:left;width:80%}
-.sam-label{width: 100%}
+.label-title{display:inline-block;width:20%;}
+.label-text{display:inline-block;width:80%;}
+.sam-label{width: 100%;}
 
 
 
 
 
 /* General CSS */
-#content {
-	margin: auto;
+#content{
+	width: 100%
+}
+.section{
+	padding-bottom: 30px;
+}
+.Section-Title{
+	text-align: center;
+}
+.Sub-Section{
+	padding-bottom: 30px;
+}
+.section-body{
+	padding-left: 10%;
 }
 
 
@@ -87,9 +105,7 @@
 		padding-right: 10%;
 		padding-left: 10%;
 	}
-	#content{
-		width: 95%;
-	}
+
 }
 
 
@@ -103,10 +119,12 @@
 		padding-right: 15%;
 		padding-left: 15%;
 	}
-	#content { 
-		
-		width: 80%;
-	}
+
+}
+
+
+#footer{
+	background-color: rgb(46, 38, 31);
 }
 
 

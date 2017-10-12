@@ -17,6 +17,30 @@ config.Profile = {
   `,
   img: ""
 }
+config.Education = [
+  makeExperience("Camberwell Grammar", "2010-2015", "High School", null,[
+    "Chemistry",
+    "English",
+    "Physics",
+    "Futher",
+    "Methords"
+  ]),
+  makeExperience("Software Engineering", "2015-Now", "RMIT University",null,[
+    "Programming Techniques",
+    "Software Eng Fundimentals",
+    "User-centered Design",
+    "Adv Prog Techniques",
+    "Discrete Strucures in Comp",
+    "Software Arch: Design & Implem",
+    "Database Concepts",
+    "Algorithms and Analysis",
+    "Operation Systems Principles",
+    "Professional Comp Practices",
+    "Web Programming",
+    "Intro Comp Sys & Platform Tech",
+    "Software Eng: Process & Tools"
+  ])
+]
 config.WorkExperience = [
   makeExperience("Findas","2016-Now","Founder",null,[
     "Working in a small team",
@@ -27,7 +51,7 @@ config.WorkExperience = [
     "Software Design and Architecture",
     "Persistance and drive"
   ]),
-  makeExperience("DieCut Engineering","2014-Now","General Hand",null,[
+  makeExperience("DieCut","2014-Now","General Hand",null,[
     "Wide Range of Experience",
     "Book keeping",
     "Managin Customers and Work Flow",
@@ -41,6 +65,7 @@ config.Knowledge = {
   "PHP": 7,
   "CSS": 6,
   "Angular": 5,
+  "Ionic": 4,
   "NodeJS" : 8,
   "Java": 8,
   "JavaScript": 8,
@@ -50,7 +75,22 @@ config.Knowledge = {
   "Bootstrap": 7,
   "Singleton Pattern": 8,
   "MVC Pattern": 7,
-  "JQuery": 5
+  "JQuery": 5,
+  "CCNA": 6
+}
+
+config.Tools = {
+  "Mac (6-Years)": 10,
+  "VS Code (1-Year)": 7,
+  "Eclips (2-Years)": 6,
+  "Linux (2-Years)": 6,
+  "Windows (10+Years)": 10,
+  "Adobe Illustrator (3-Years)": 4,
+  "Sublime Text (2-Years)": 7,
+  "Putty (4-Years)": 7,
+  "Firebase (1-Year)": 8,
+  "XCode (1-Year)": 8,
+  "GCS (6-Months)": 5
 }
 config.particle = {
     "particles": {

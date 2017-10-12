@@ -1,15 +1,20 @@
-let Section = function(Title){
+let Section = function(Title,subTitle=""){
     return $('<div>',{id: Title+"-section",class:"section"})
-            .html("<h1>"+Title+"</h1>");}
+            .html(`<h1 class='Section-Title'>`+Title+`</h1>
+                    <h2 class='Section-Comment'>`+subTitle+`</h2>`);}
 
+let SubSection = function(Title,Parent =""){
+    return $('<div>',{id: Title+Parent+"-subSection",class:"Sub-Section"})
+            .html("<hr><h2 class='SubSection-Title'>"+Title+"</h2>");
+}
 let SectionBody = function(id){
     return $('<div>',{id: id+"-body", class:"section-body"});}
 
-let label = function(text,title,location){
+let label = function(title,text,location){
     return $('<div>',{id:title+"-"+location,class:"sam-label"})
             .append(
-                $("<p>",{class:"label-title"}).text(title),
-                $("<p>",{class:"label-text"}).text(text)
+                $("<p>",{class:"label-title"}).html(title),
+                $("<p>",{class:"label-text"}).html(text)
             )
 }
 
@@ -17,10 +22,10 @@ let label = function(text,title,location){
 let BuildProfileSection = function(data){
     return SectionBody("Profile")
     .append(
-        label(data.name,"Name","Profile"),
-        label(data.age,"Age", "Profile"),
-        label(data.location,"Location","Profile"),
-        label(data.about, "About","Profile")
+        label("Name",data.name,"Profile"),
+        label("Age",data.age, "Profile"),
+        label("Location",data.location,"Profile"),
+        label( "About",data.about,"Profile")
     )
 }
 

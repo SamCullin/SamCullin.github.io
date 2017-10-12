@@ -19,9 +19,8 @@ let BuildWorkExperience = function(data){
 }
 let BuildWorkExperienceItem = function(data){
     return $("<div>",{class:"WorkExperienceItem"}).append(
-        label(data.possition,data.name,"WorkExperience"),
-        $("<p>",{class:"WorkExperienceTime"}).text(data.time),
-        UnorderList(data.details)
+        label(data.name,data.possition,"WorkExperience"),
+        label(data.time,  UnorderList(data.details), "WorkExperience")
     )
 }
 let UnorderList = function(data){
@@ -32,19 +31,53 @@ let UnorderList = function(data){
     return section;
 }
 
+let BuildProjectSection = function(data){
+    return $("<div>",{class:"ProjectSection"})
+}
+
 
 
 
 
 let build = function(){
-    let SkillSection = Section("Skills").append(BuildRatingSection("Skills",config.Knowledge));
-    let ProfileSection = Section("Profile").append(BuildProfileSection(config.Profile));
-    let WorkExperienceSection = Section("Work Experience").append(BuildWorkExperience(config.WorkExperience));
+    let SkillSection = Section("Abilities")
+            .append(
+                SectionBody("Abilities")
+                .append(
+                    SubSection("Skills").append(BuildRatingSection("Skills",config.Knowledge)),
+                    SubSection("Tools").append(BuildRatingSection("Tools",config.Tools))
+                )
+            );
+
+    let ProfileSection = Section("Profile")
+            .append(
+                SectionBody("Profile")
+                .append(
+                    SubSection("Sam Cullin").append(BuildProfileSection(config.Profile))
+                )
+            );
+
+    let WorkExperienceSection = Section("Experiences")
+            .append(
+                SectionBody("Experiences")
+                .append(
+                    SubSection("Education").append(BuildWorkExperience(config.Education)),
+                    SubSection("Careers").append(BuildWorkExperience(config.WorkExperience))
+                )
+            );
+
+    let Projects = Section("Projects")
+            .append(
+                BuildProjectSection(null)
+            );
+
+
     $('#content').append
     (
         ProfileSection,
         WorkExperienceSection,
-        SkillSection
+        SkillSection,
+        Projects
     );
 }
 
