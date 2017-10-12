@@ -87,9 +87,7 @@
 .Sub-Section{
 	padding-bottom: 30px;
 }
-.section-body{
-	padding-left: 10%;
-}
+
 
 
 
@@ -100,6 +98,9 @@
 @media only screen and (max-width: 600px){
 	#header-down-button {
 		right: 0px;
+	}
+	.section-body{
+		padding-left: 4%;
 	}
 	.section{
 		padding-right: 10%;
@@ -114,6 +115,9 @@
 	#header-down-button {
 		right: 10%;
 		width:150px;
+	}
+	.section-body{
+		padding-left: 10%;
 	}
 	.section{
 		padding-right: 15%;
