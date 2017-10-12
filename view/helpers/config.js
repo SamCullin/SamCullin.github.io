@@ -41,6 +41,53 @@ config.Education = [
     "Software Eng: Process & Tools"
   ])
 ]
+
+config.Contacts = [
+  {
+    icon: "./view/images/upArrow.png",
+    text: "sam@miplace.com",
+    link: "sam@miplace.com"
+  },
+  {
+    icon: "./view/images/upArrow.png",
+    text: "Linked In",
+    link: "https://www.linkedin.com/in/sam-cullin-ba6b70144/"
+  },
+  {
+    icon: "./view/images/upArrow.png",
+    text: "GitHub",
+    link: "https://github.com/SamCullin"
+  },
+  {
+    icon: "./view/images/upArrow.png",
+    text: "Twitter",
+    link: "https://twitter.com/Sam_Cullin"
+  },
+
+]
+
+config.Projects = [
+  {
+    name: "Test",
+    link: "github.com",
+    img: "./view/images/FindasLogo.png"
+  },
+  {
+    name: "Test",
+    link: "github.com",
+    img: "./view/images/FindasLogo.png"
+  },
+  {
+    name: "Test",
+    link: "github.com",
+    img: "./view/images/FindasLogo.png"
+  },
+  {
+    name: "Test",
+    link: "github.com",
+    img: "./view/images/FindasLogo.png"
+  }
+]
 config.WorkExperience = [
   makeExperience("Findas","2016-Now","Founder",null,[
     "Working in a small team",

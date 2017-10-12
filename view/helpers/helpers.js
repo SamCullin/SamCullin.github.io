@@ -17,6 +17,13 @@ let label = function(title,text,location){
                 $("<p>",{class:"label-text"}).html(text)
             )
 }
+let iconlabel = function(icon,text,link,classes = "light"){
+    return $('<div>',{class: "icon-label "+classes})
+        .append(
+            $("<img>",{class:"icon-icon-label "+classes,src:icon}),
+            $("<a>",{class:"link-icon-label "+classes}).html(text)
+        )
+}
 
 
 let BuildProfileSection = function(data){

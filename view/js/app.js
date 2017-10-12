@@ -32,7 +32,28 @@ let UnorderList = function(data){
 }
 
 let BuildProjectSection = function(data){
-    return $("<div>",{class:"ProjectSection"})
+    let section = $("<div>",{class:"ProjectSection"});
+    data.forEach(item=> {
+        section.append(ProjectTile(item))
+    })
+    return section
+}
+
+let ProjectTile = function(data){
+    return $("<div>",{id:data.name,class:"ProjectTileCase"})
+            .append($('<div>',{class: "ProjectTile",href:data.link}).append(
+                $("<img>",{class:"ProjectTileImage",src:data.img}),
+                $("<img>",{class:"ProjectTileLinkIcon",src:"./view/images/upArrow.png"})
+           ))
+}
+
+let BuildFooterSection = function(data){
+    let section = $('<div>',{class: "Footer-Section"})
+        .html("<h1 class='dark'>Contact</h1>")
+    data.forEach(item=>{
+        section.append(iconlabel(data.icon,data.text,data.link,"dark"));
+    })
+    return section;
 }
 
 
@@ -68,7 +89,7 @@ let build = function(){
 
     let Projects = Section("Projects")
             .append(
-                BuildProjectSection(null)
+                BuildProjectSection(config.Projects)
             );
 
 
@@ -79,6 +100,8 @@ let build = function(){
         SkillSection,
         Projects
     );
+
+    $('#footer').html(BuildFooterSection(config.Contacts))
 }
 
 build();
