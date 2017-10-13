@@ -18,48 +18,30 @@ config.Profile = {
   img: ""
 }
 config.Education = [
-  makeExperience("Camberwell Grammar", "2010-2015", "High School", null,[
-    "Chemistry",
-    "English",
-    "Physics",
-    "Futher",
-    "Methords"
-  ]),
-  makeExperience("Software Engineering", "2015-Now", "RMIT University",null,[
-    "Programming Techniques",
-    "Software Eng Fundimentals",
-    "User-centered Design",
-    "Adv Prog Techniques",
-    "Discrete Strucures in Comp",
-    "Software Arch: Design & Implem",
-    "Database Concepts",
-    "Algorithms and Analysis",
-    "Operation Systems Principles",
-    "Professional Comp Practices",
-    "Web Programming",
-    "Intro Comp Sys & Platform Tech",
-    "Software Eng: Process & Tools"
-  ])
+  makeExperience("Camberwell Grammar", "2010-2015", "High School", null,
+  "I graduated highschool, where I enjoyed doing science, math and arts. I realized in my third year of school that I wanted to do something with software, and so I started a CCNA vet cource which was my introduction into programing."),
+  makeExperience("Software Engineering", "2015-Now", "RMIT University",null,
+  "The education was mainly in PHP, C and java, but I also learned about SQL, MVC, UML and more. Here I learned about the importance of OOP , code resuablitiy and user experience and design.")
 ]
 
 config.Contacts = [
   {
-    icon: "./view/images/upArrow.png",
+    icon: "./view/images/eamil.png",
     text: "sam@miplace.com",
     link: "sam@miplace.com"
   },
   {
-    icon: "./view/images/upArrow.png",
+    icon: "./view/images/linkedin.png",
     text: "Linked In",
     link: "https://www.linkedin.com/in/sam-cullin-ba6b70144/"
   },
   {
-    icon: "./view/images/upArrow.png",
+    icon: "./view/images/github.png",
     text: "GitHub",
     link: "https://github.com/SamCullin"
   },
   {
-    icon: "./view/images/upArrow.png",
+    icon: "./view/images/twitter.png",
     text: "Twitter",
     link: "https://twitter.com/Sam_Cullin"
   },
@@ -89,21 +71,10 @@ config.Projects = [
   }
 ]
 config.WorkExperience = [
-  makeExperience("Findas","2016-Now","Founder",null,[
-    "Working in a small team",
-    "Project Management",
-    "Development life cycles",
-    "Communication",
-    "Teaching",
-    "Software Design and Architecture",
-    "Persistance and drive"
-  ]),
-  makeExperience("DieCut","2014-Now","General Hand",null,[
-    "Wide Range of Experience",
-    "Book keeping",
-    "Managin Customers and Work Flow",
-    "IT Support"
-  ])
+  makeExperience("Findas","2016-Now","Founder",null,
+  "Details about what i have done what i have learnt"),
+  makeExperience("DieCut","2014-Now","General Hand",null,
+  "Details about what i have done what i have learnt")
 ]
 config.Knowledge = {
   "C":8,
