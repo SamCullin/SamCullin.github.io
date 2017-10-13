@@ -21,7 +21,7 @@ let iconlabel = function(icon,text,link,classes="col-item",color="light"){
     return $('<div>',{class: "icon-label "+classes+" "+color})
         .append(
             $("<img>",{class:"icon-icon-label "+color,src:icon}),
-            $("<a>",{class:"link-icon-label "}).html(text)
+            $("<a>",{class:"link-icon-label "+color}).html(text)
         )
 }
 
