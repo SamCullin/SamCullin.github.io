@@ -20,10 +20,11 @@
 		width: 50%;}
 	#content{
 		padding-top: 100vh;
-		padding-bottom: 80vh;
+		padding-bottom: 70vh;
 		width: 100%;
 	}
 	#footer{
+		height: 30vh;
 		padding: 0;
 	}
 	html{

@@ -43,12 +43,13 @@ let Cell = function(data,color="light"){
            ))
 }
 
-let BuildFooterSection = function(data){
-    let section = $('<div>',{class: "Footer-Section dark"})
-        .html("<h1 class='dark'>Contact</h1>")
+let BuildFooterSection = function(data,color="dark"){
+    let section = $('<div>',{class: "Footer-Section "+color})
+    .append("<hr>");
     data.forEach(item=>{
-        section.append(iconlabel(data.icon,data.text,data.link,"col-icon","dark"));
+        section.append(iconlabel(item.icon,item.text,item.link,"col-item",color));
     })
+    section.append("<br><hr>");
     return section;
 }
 
@@ -99,6 +100,14 @@ let build = function(){
             );
     }("mild");
 
+    let FooterSection = function(color){
+        return Section("Contact","",color)
+                .append(
+                    BuildFooterSection(config.Contacts,color)
+                )
+            
+    }("dark");
+
 
     $('#content').append
     (
@@ -108,7 +117,9 @@ let build = function(){
         Projects
     );
 
-    $('#footer').html(BuildFooterSection(config.Contacts))
+    $('#footer').html(
+        FooterSection
+    )
 }
 
 build();

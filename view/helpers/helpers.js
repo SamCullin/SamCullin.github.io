@@ -18,11 +18,13 @@ let label = function(title,text,location, classes = "",color="light"){
             )
 }
 let iconlabel = function(icon,text,link,classes="col-item",color="light"){
-    return $('<div>',{class: "icon-label "+classes+" "+color})
+    return $('<div>',{class: "icon-label-outer "+classes+" "+color})
         .append(
-            $("<img>",{class:"icon-icon-label "+color,src:icon}),
+            $('<div>',{class: "icon-label-inner "+color}).append(
+            $("<img>",{class:"icon-icon-label "+color,src:icon,src: icon}),
             $("<a>",{class:"link-icon-label "+color}).html(text)
-        )
+            .attr('href', link)
+        )).attr('href', link)
 }
 
 

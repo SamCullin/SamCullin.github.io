@@ -26,7 +26,7 @@ config.Education = [
 
 config.Contacts = [
   {
-    icon: "./view/images/eamil.png",
+    icon: "./view/images/email.png",
     text: "sam@miplace.com",
     link: "sam@miplace.com"
   },
