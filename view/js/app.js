@@ -1,11 +1,67 @@
 particlesJS('particles-js',config.particle);
-
+let barStatic = false;
+let lastSelection = "#Profile-Button";
+let changeButtons = function(newbutton){
+    if( newbutton != lastSelection){
+        $(lastSelection).removeClass('active');
+        lastSelection = newbutton;
+        $(lastSelection).addClass('active');
+    }
+}
 
 $(document).ready(function(){
-    $("#header-down-button").click(function(){
+    $(".start-button").click(function(){
+        $('html,body').animate({
+            scrollTop: $('#Profile-section').offset().top}, 700);
         console.log("down was clicked");
     });
+    $("#Profile-Button").click(function(){
+        $('html,body').animate({
+            scrollTop: $('#Profile-section').offset().top}, 700);
+        console.log("down was clicked");
+    });
+    $("#Experience-Button").click(function(){
+        $('html,body').animate({
+            scrollTop: $('#Experiences-section').offset().top}, 700);
+        console.log("down was clicked");
+    });
+    $("#Skills-Button").click(function(){
+        $('html,body').animate({
+            scrollTop: $('#Abilities-section').offset().top}, 700);
+        console.log("down was clicked");
+    });
+    $("#Projects-Button").click(function(){
+        $('html,body').animate({
+            scrollTop: $('#Projects-section').offset().top}, 700);
+        console.log("down was clicked");
+    });
+    $("#Contact-Button").click(function(){
+        $('html,body').animate({
+            scrollTop: $('#footer').offset().top}, 700);
+        console.log("down was clicked");
+    });
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if(scroll < $('#Profile-section').offset().top-30){
+            $('nav').removeClass('side-nav-fixed').addClass('side-nav-relative');
+        }else{
+            $('nav').removeClass('side-nav-relative').addClass('side-nav-fixed');
+        }
+        if(scroll < $('#Experiences-section').offset().top){
+            changeButtons("#Profile-Button");
+        }else if(scroll < $('#Abilities-section').offset().top){
+            changeButtons("#Experience-Button");
+        }else if(scroll < $('#Projects-section').offset().top){
+            changeButtons("#Skills-Button");
+        }else if(scroll < $('#footer').offset().top){
+            changeButtons("#Projects-Button");
+        }else{
+            changeButtons("#Contact-Button");
+        }
+    });
+
 });
+
 
 
 
@@ -64,7 +120,6 @@ let build = function(){
             .append(
                 SectionBody("Profile",color)
                 .append(
-                    
                     SubSection("Sam Cullin","Profile",color)
                         .append(label(
                             $("<img>",{class: "Profile-Image",src:"view/images/FindasLogo.png"}),
@@ -92,7 +147,8 @@ let build = function(){
             .append(
                 SectionBody("Abilities",color)
                 .append(
-                    SubSection("Skills","Abilities",color).append(BuildRatingSection("Skills",config.Knowledge,color)),
+                    SubSection("Skills","Abilities",color).append(BuildRatingSection("Skills",config.Skills,color)),
+                    SubSection("Languages","Abilities",color).append(BuildRatingSection("Languages",config.Languages,color)),
                     SubSection("Tools","Abilities",color).append(BuildRatingSection("Tools",config.Tools,color))
                 )
             );
@@ -125,7 +181,7 @@ let build = function(){
         Projects
     );
 
-    $('#footer').html(
+    $('#footer').append(
         FooterSection
     );
 }

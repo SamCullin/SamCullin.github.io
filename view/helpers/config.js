@@ -85,11 +85,27 @@ config.Projects = [
 ]
 config.WorkExperience = [
   makeExperience("Findas","2016-Now","Founder",null,
-  "Details about what i have done what i have learnt"),
+  "This was a personal project that I took on with a group of friends. This is where I learnt swift, firebase and the google cloud platform. I also tutored my friends teaching them how to code for the first time."),
   makeExperience("DieCut","2014-Now","General Hand",null,
-  "Details about what i have done what i have learnt")
+  "Die Cut is my family owned mettal cutting buissness. From this small buisness I learnt about customer satisfaction and customer retention.")
 ]
-config.Knowledge = {
+
+config.Skills = {
+  "Maching Learning": 3,
+  "IOS Development": 9,
+  "Backend Development": 8,
+  "Web Development": 7,
+  "Database Design": 6,
+  "Agile Development": 7,
+  "Rest APIs": 8,
+  "GraphQL": 4,
+  "Data Science": 3,
+  "Information Theroy": 3,
+  "Cisco CNA": 6,
+  "Singleton Pattern": 8,
+  "MVC Pattern": 7
+}
+config.Languages = {
   "C":8,
   "Python": 6,
   "Swift":9,
@@ -102,12 +118,8 @@ config.Knowledge = {
   "JavaScript": 8,
   "SQL": 8,
   "pandas": 7,
-  "FireBase": 8,
   "Bootstrap": 7,
-  "Singleton Pattern": 8,
-  "MVC Pattern": 7,
-  "JQuery": 5,
-  "CCNA": 6
+  "JQuery": 5
 }
 
 config.Tools = {
