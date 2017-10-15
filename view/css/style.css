@@ -7,8 +7,12 @@
 		overflow: hidden;
 		position: fixed;
 		background-image:  url('./../images/headerImage.jpeg');
-		background-repeat: no-repeat;
-		background-position: center;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: top center !important;
+		background-repeat: no-repeat !important;
+		background-attachment: fixed;
 		z-index: -1;
 	}
 	#header-title {
@@ -19,12 +23,13 @@
 		z-index: 2;
 		width: 50%;}
 	#content{
+		box-sizing: border-box;
 		padding-top: 100vh;
-		padding-bottom: 70vh;
+		padding-bottom: 75vh;
 		width: 100%;
 	}
 	#footer{
-		height: 30vh;
+		height: 25vh;
 		padding: 0;
 	}
 	html{
@@ -35,6 +40,14 @@
 		height: 100%;
 		overflow: auto;
 	} 
+	.Profile-Image{
+		display: block;
+		width:100%;
+
+		margin: auto;
+		max-width: 150px;
+		max-height: 150px;
+	}
 	.RatingDots	{width: 120px}
 	.RatingTag	{width:	120px}
 	.rateDot{height: 12px;width: 12px;}

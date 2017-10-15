@@ -12,23 +12,36 @@ config.Profile = {
   name: "Sam Cullin",
   age: "21",
   location: "3127, Melbourne, Australia",
-  about: `A passionate graduate with a drive to learn and create. Always looking for places to improve upon and learn.  With no lack of persistence and drive. Which I have shown through my own personally motivated projects.
-  More experience than the average graduate having brought a full stack system to market with a small team of like minded passionate people.
+  about: `
+  A passionate graduate with a drive to learn and create. 
+  Always looking for places to improve upon and learn.  
+  With no lack of persistence and drive. 
+  Which I have shown through my own personally motivated projects.
+  More experience than the average graduate having brought a full 
+  stack system to market with a small team of like minded passionate people.
   `,
   img: ""
 }
 config.Education = [
   makeExperience("Camberwell Grammar", "2010-2015", "High School", null,
-  "I graduated highschool, where I enjoyed doing science, math and arts. I realized in my third year of school that I wanted to do something with software, and so I started a CCNA vet cource which was my introduction into programing."),
+  `
+  I graduated highschool, where I enjoyed doing science, math and arts.
+   I realized in my third year of school that I wanted to do something with software,
+    and so I started a CCNA vet cource which was my introduction into programing.
+  `),
   makeExperience("Software Engineering", "2015-Now", "RMIT University",null,
-  "The education was mainly in PHP, C and java, but I also learned about SQL, MVC, UML and more. Here I learned about the importance of OOP , code resuablitiy and user experience and design.")
+  `
+  The education was mainly in PHP, C and java, but I also learned about SQL, 
+  MVC, UML and more. Here I learned about the importance of OOP , code 
+  resuablitiy and user experience and design.
+  `)
 ]
 
 config.Contacts = [
   {
     icon: "./view/images/email.png",
-    text: "sam@miplace.com",
-    link: "sam@miplace.com"
+    text: "Email",
+    link: "mailto:sam@miplace.com?subject=SamCullin.Github.io&body=Hey Sam!! %0A%0Aname:%0Aemail:%0Anumber:%0Acompany:%0Adetails:%0A%0AKind Regards {{name}}%0A%0A"
   },
   {
     icon: "./view/images/linkedin.png",
@@ -38,12 +51,12 @@ config.Contacts = [
   {
     icon: "./view/images/github.png",
     text: "GitHub",
-    link: "https://github.com/SamCullin"
+    link: "https://www.github.com/SamCullin"
   },
   {
     icon: "./view/images/twitter.png",
     text: "Twitter",
-    link: "https://twitter.com/Sam_Cullin"
+    link: "https://www.twitter.com/Sam_Cullin"
   },
 
 ]
@@ -108,7 +121,7 @@ config.Tools = {
   "Putty (4-Years)": 7,
   "Firebase (1-Year)": 8,
   "XCode (1-Year)": 8,
-  "GCS (6-Months)": 5
+  "GCP (6-Months)": 5
 }
 config.particle = {
     "particles": {

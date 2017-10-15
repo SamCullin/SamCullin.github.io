@@ -37,10 +37,11 @@ let BuildProjectSection = function(data,color="light"){
 
 let Cell = function(data,color="light"){
     return $("<div>",{id:data.name,class:"Cell-Outer col-item "+color})
-            .append($('<div>',{class: "Cell-Inner "+color,href:data.link}).append(
+            .append($('<a>',{class: "Cell-Inner "+color}).append(
                 $("<img>",{class:"Cell-Main-Image "+color,src:data.img}),
                 $("<img>",{class:"Cell-Sub-Image ",src:"./view/images/launch.png"})
-           ))
+           ).attr('href', data.link)
+        )
 }
 
 let BuildFooterSection = function(data,color="dark"){
@@ -58,23 +59,19 @@ let BuildFooterSection = function(data,color="dark"){
 
 
 let build = function(){
-    let SkillSection = function(color){
-        return Section("Abilities","",color)
-            .append(
-                SectionBody("Abilities",color)
-                .append(
-                    SubSection("Skills","Abilities",color).append(BuildRatingSection("Skills",config.Knowledge,color)),
-                    SubSection("Tools","Abilities",color).append(BuildRatingSection("Tools",config.Tools,color))
-                )
-            );
-    }("light");
-
     let ProfileSection = function(color){
         return Section("Profile","",color)
             .append(
                 SectionBody("Profile",color)
                 .append(
-                    SubSection("Sam Cullin","Profile",color).append(BuildProfileSection(config.Profile,color))
+                    
+                    SubSection("Sam Cullin","Profile",color)
+                        .append(label(
+                            $("<img>",{class: "Profile-Image",src:"view/images/FindasLogo.png"}),
+                            BuildProfileSection(config.Profile,color),
+                        "Profile",
+                        "Profile-Label",
+                        color))
                 )
             );
     }("light");
@@ -89,6 +86,17 @@ let build = function(){
                 )
             );
     }("mild");
+
+    let SkillSection = function(color){
+        return Section("Abilities","",color)
+            .append(
+                SectionBody("Abilities",color)
+                .append(
+                    SubSection("Skills","Abilities",color).append(BuildRatingSection("Skills",config.Knowledge,color)),
+                    SubSection("Tools","Abilities",color).append(BuildRatingSection("Tools",config.Tools,color))
+                )
+            );
+    }("light");
 
     let Projects = function(color){
         return Section("Projects","",color)
@@ -119,7 +127,7 @@ let build = function(){
 
     $('#footer').html(
         FooterSection
-    )
+    );
 }
 
 build();
