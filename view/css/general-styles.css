@@ -5,6 +5,9 @@
 .dark, .darkForGround{
 	color: white;
 }
+.dark>img{
+    filter: invert(70%);-webkit-filter: invert(70%);
+}
 .dark, .darkBackGround{
     background-color: rgb(46, 38, 31);
 }
@@ -25,6 +28,9 @@
 
 
 /* Nav Styling */
+nav {
+    z-index: 10000000000000000;
+}
 #upArrow{
     filter: invert(70%);-webkit-filter: invert(70%);
     height:54px;
@@ -38,14 +44,27 @@
 
 
 .header-nav{
+    overflow: hidden;
+    float:right;
+    width: 100%;
 
 }
-.header-nav>
-.side-nav>.nav-fixed{
+.hiden{
+    display: none;
+}
+.header-nav.nav-fixed{
+    position: fixed;
+    top: 0px;
+}
+.header-nav.nav-relative{
+    position: relative;
+    top:100vh;
+}
+.side-nav.nav-fixed{
     position: fixed;
     top: 30px;
 }
-.side-nav>.nav-relative{
+.side-nav.nav-relative{
     position: relative;
     top: 100vh;
 }
@@ -55,6 +74,9 @@
     right: 5%;
     border-radius: 6px;
     width: 110px;
+}
+#nav-content{
+    width: 100%;
     height: 300px;
 }
 
@@ -70,12 +92,13 @@
     width:110px; 
 }
 
+/* Large Screen */
 @media only screen and(min-width: 700px){
 
 }
 
 
-
+/* Small screen */
 @media only screen and (max-width: 800px){
     .side-nav{
         right: 2% !important;
@@ -89,11 +112,10 @@ ul{
     padding:0px;
     margin:0px;
     width: 100%;
-    height: 100%;
+    height: 300px;
 }
 
 li{
-    padding-top: 20%;
     margin: auto;
     height:20%;
     width: 100%;

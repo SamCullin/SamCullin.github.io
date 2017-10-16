@@ -8,8 +8,30 @@ let changeButtons = function(newbutton){
         $(lastSelection).addClass('active');
     }
 }
+let updateWidth = function(){
+    if($(window).width() < 700){
+        $('#nav-content').addClass('hidden')
+        $('#nav-btn').removeClass('hidden')
+        $('nav').removeClass('side-nav').addClass('header-nav');
+    }else{
+        $('#nav-btn').addClass('hidden')
+        $('#nav-content').removeClass('hidden')
+        $('nav').removeClass('header-nav').addClass('side-nav');
+    }
+}
+let updateHeader = function(scroll){
+    if(scroll < $('#Profile-section').offset().top-30){
+        $('nav').removeClass('nav-fixed').addClass('nav-relative');
+    }else{
+        $('nav').removeClass('nav-relative').addClass('nav-fixed');
+    }
+}
 
 $(document).ready(function(){
+    $('#nav-btn').click(function(){
+        console.log("menu btn pressed");
+        $('#nav-content').toggleClass('hidden');
+    })
     $(".start-button").click(function(){
         $('html,body').animate({
             scrollTop: $('#Profile-section').offset().top}, 700);
@@ -42,11 +64,7 @@ $(document).ready(function(){
     });
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        if(scroll < $('#Profile-section').offset().top-30){
-            $('nav').removeClass('nav-fixed').addClass('nav-relative');
-        }else{
-            $('nav').removeClass('nav-relative').addClass('nav-fixed');
-        }
+        updateHeader(scroll);
         if(scroll < $('#Experiences-section').offset().top){
             changeButtons("#Profile-Button");
         }else if(scroll < $('#Abilities-section').offset().top){
@@ -61,12 +79,10 @@ $(document).ready(function(){
     });
 
     $(window).resize(function(){
-        if($(window).width() < 700){
-            $('nav').removeClass('side-nav').addClass('header-nav');
-        }else{
-            $('nav').removeClass('header-nav').addClass('side-nav');
-        }
-    })
+        updateWidth()
+    });
+    updateHeader($(window).scrollTop());
+    updateWidth();
 
 });
 
