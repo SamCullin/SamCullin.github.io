@@ -25,20 +25,6 @@
 
 
 /* Nav Styling */
-.header-nav{
-
-}
-.start-button{
-    display: block;
-    position: absolute;
-    border-radius: 6px;
-    height: 50px;
-    bottom: 0;
-    z-index: 3;
-    right: 5%;
-    width:110px;
-    
-}
 #upArrow{
     filter: invert(70%);-webkit-filter: invert(70%);
     height:54px;
@@ -50,25 +36,18 @@
     filter: invert(100%);-webkit-filter: invert(100%);
 }
 
-nav{
-    z-index: 1000000;
-    background-color: #f1f1f1;
+
+.header-nav{
+
 }
-.side-nav-fixed{
+.header-nav>
+.side-nav>.nav-fixed{
     position: fixed;
     top: 30px;
 }
-.side-nav-relative{
+.side-nav>.nav-relative{
     position: relative;
     top: 100vh;
-}
-@media only screen and (max-width: 800px){
-    .side-nav{
-        right: 2% !important;
-    }
-    .start-button{
-        right: 2% !important;
-    }
 }
 .side-nav{
     overflow: hidden;
@@ -78,6 +57,34 @@ nav{
     width: 110px;
     height: 300px;
 }
+
+
+.start-button{
+    display: block;
+    position: absolute;
+    border-radius: 6px;
+    height: 50px;
+    bottom: 0;
+    z-index: 3;
+    right: 5%;
+    width:110px; 
+}
+
+@media only screen and(min-width: 700px){
+
+}
+
+
+
+@media only screen and (max-width: 800px){
+    .side-nav{
+        right: 2% !important;
+    }
+    .start-button{
+        right: 2% !important;
+    }
+}
+
 ul{
     padding:0px;
     margin:0px;

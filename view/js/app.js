@@ -43,9 +43,9 @@ $(document).ready(function(){
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if(scroll < $('#Profile-section').offset().top-30){
-            $('nav').removeClass('side-nav-fixed').addClass('side-nav-relative');
+            $('nav').removeClass('nav-fixed').addClass('nav-relative');
         }else{
-            $('nav').removeClass('side-nav-relative').addClass('side-nav-fixed');
+            $('nav').removeClass('nav-relative').addClass('nav-fixed');
         }
         if(scroll < $('#Experiences-section').offset().top){
             changeButtons("#Profile-Button");
@@ -59,6 +59,14 @@ $(document).ready(function(){
             changeButtons("#Contact-Button");
         }
     });
+
+    $(window).resize(function(){
+        if($(window).width() < 700){
+            $('nav').removeClass('side-nav').addClass('header-nav');
+        }else{
+            $('nav').removeClass('header-nav').addClass('side-nav');
+        }
+    })
 
 });
 
