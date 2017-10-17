@@ -9,60 +9,73 @@ let changeButtons = function(newbutton){
     }
 }
 let updateWidth = function(){
-    if($(window).width() < 700){
-        $('#nav-content').addClass('hidden')
-        $('#nav-btn').removeClass('hidden')
+    if($(window).width() < 700-16){
+        $('#nav-content').addClass('hidden');
+        $('#nav-btn').removeClass('hidden');
         $('nav').removeClass('side-nav').addClass('header-nav');
     }else{
-        $('#nav-btn').addClass('hidden')
-        $('#nav-content').removeClass('hidden')
+        $('#nav-btn').addClass('hidden');
+        $('#nav-content').removeClass('hidden');
         $('nav').removeClass('header-nav').addClass('side-nav');
     }
 }
 let updateHeader = function(scroll){
-    if(scroll < $('#Profile-section').offset().top-30){
+    let offSet = 30;
+    if($(window).width() < 700-16){offSet = 54;}
+    if(scroll < $('#Profile-section').offset().top-offSet){
         $('nav').removeClass('nav-fixed').addClass('nav-relative');
     }else{
         $('nav').removeClass('nav-relative').addClass('nav-fixed');
     }
 }
+let toggleMenu = function(bool = null){
+    if($(window).width() < 700-16){
+        let nav = $('#nav-content')
+        if( bool == null){
+            nav.toggleClass('hidden');
+        }else if(bool == true){
+            nav.addClass('hidden');
+        }else if(bood == false){
+            nav.removeClass('hidden');
+        }
+    }
+}
+let scrollLocation = function(item){
+    let offset = 0;
+    if($(window).width() < 700-16){offset = 54;}
+    return $(item).offset().top - offset
+}
 
 $(document).ready(function(){
     $('#nav-btn').click(function(){
-        console.log("menu btn pressed");
-        $('#nav-content').toggleClass('hidden');
+       toggleMenu()
     })
-    $(".start-button").click(function(){
+    $("#start-button").click(function(){
         $('html,body').animate({
-            scrollTop: $('#Profile-section').offset().top}, 700);
-        console.log("down was clicked");
+            scrollTop: scrollLocation('#Profile-section')}, 700);
     });
     $("#Profile-Button").click(function(){
         $('html,body').animate({
-            scrollTop: $('#Profile-section').offset().top}, 700);
-        console.log("down was clicked");
+            scrollTop: scrollLocation('#Profile-section')}, 700);
     });
     $("#Experience-Button").click(function(){
         $('html,body').animate({
-            scrollTop: $('#Experiences-section').offset().top}, 700);
-        console.log("down was clicked");
+            scrollTop: scrollLocation('#Experiences-section')}, 700);
     });
     $("#Skills-Button").click(function(){
         $('html,body').animate({
-            scrollTop: $('#Abilities-section').offset().top}, 700);
-        console.log("down was clicked");
+            scrollTop: scrollLocation('#Abilities-section')}, 700);
     });
     $("#Projects-Button").click(function(){
         $('html,body').animate({
-            scrollTop: $('#Projects-section').offset().top}, 700);
-        console.log("down was clicked");
+            scrollTop: scrollLocation('#Projects-section')}, 700);
     });
     $("#Contact-Button").click(function(){
         $('html,body').animate({
             scrollTop: $('#footer').offset().top}, 700);
-        console.log("down was clicked");
     });
     $(window).scroll(function() {
+        toggleMenu(true);
         var scroll = $(window).scrollTop();
         updateHeader(scroll);
         if(scroll < $('#Experiences-section').offset().top){
@@ -90,7 +103,6 @@ $(document).ready(function(){
 
 
 let BuildWorkExperience = function(data,color="light"){
-    console.log(data);
     let section = SectionBody("WorkExperience",color)
     data.forEach(item => {
         section.append(BuildWorkExperienceItem(item,color));
