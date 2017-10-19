@@ -68,8 +68,11 @@
         background-image: url('./../images/headerImage.jpeg');
         -moz-background-size: cover;
         -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-color: darkslategray;
+        background-attachment: fixed;
         background-size: cover;
-        background-position: top center !important;
+        background-position: center center !important;
         background-repeat: no-repeat !important;
         background-attachment: fixed;
         width:100%;
