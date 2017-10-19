@@ -71,10 +71,11 @@ let build = function(){
     $('#footer').append(
         FooterSection
     );
+    setTimeout(finishedBuilding, 500);
 }
 updateWidth();
 build();
-updateHeader($(window).scrollTop());
+
 
 $(document).ready(function(){
     $('#nav-btn').click(function(){

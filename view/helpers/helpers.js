@@ -156,6 +156,23 @@
     let scrollLocation = function(item){
         return $(item).offset().top - offset();
     };
+    let finishedBuilding = function(){
+        $('#loader').addClass('hidden');
+        console.log("did click loader");
+        $(window).scrollTop(0);
+        $('#header-title').animate({
+            top:'17%',
+            opacity: '1'
+        })
+        $('#start-button').animate({
+            bottom: '0px',
+            opacity: '1'
+        })
+        $("#content").removeClass('hidden');
+        $('#footer').removeClass('hidden');
+        updateHeader($(window).scrollTop());
+        $("nav").removeClass('hidden');
+    }
 
 
 
