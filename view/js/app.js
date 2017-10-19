@@ -72,8 +72,9 @@ let build = function(){
         FooterSection
     );
 }
-
+updateWidth();
 build();
+updateHeader($(window).scrollTop());
 
 $(document).ready(function(){
     $('#nav-btn').click(function(){
@@ -122,7 +123,6 @@ $(document).ready(function(){
     $(window).resize(function(){
         updateWidth();
     });
-    updateHeader($(window).scrollTop());
-    updateWidth();
+    
 
 });

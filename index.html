@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="view/css/style.css">
     <link rel="stylesheet" href="view/css/general-styles.css">
     <link rel="stylesheet" href="view/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
-
+    
     <div id="head" class="fullHeight">
-            <div id="particles-js"></div>
-            <div id="header-title">
+            <div id="loader"></div>
+            <div id="particles-js" class="hidden"></div>
+            <div id="header-title" class="hidden">
                     <h1 class="darkForGround center">Sam Cullin</h1>
                     <hr>
                     <h2 class="darkForGround center">Software Engineer</h2>
             </div>
-
     </div>
-    <div id="start-button" class="dark">
+    <div id="start-button" class="dark hidden">
             <img src="./view/images/upArrow.png" id="upArrow" class="center-horizonal"/>
     </div>
-    <nav class="dark">
-        <div id="nav-btn"><img class="dark" src="view/images/menu.png"/></div>
-        <div id="nav-content" class="">
+    <nav class="dark hidden">
+        <div id="nav-btn" class="hidden"><img class="dark" src="view/images/menu.png"/></div>
+        <div id="nav-content" class="hidden">
             <ul class="dark">
                 <li id="Profile-Button" class="dark active"><p>Profile</p></li>
                 <li id="Experience-Button"  class="dark"><p>Experience</p></li>
@@ -36,14 +35,15 @@
         </div>
         
     </nav>
-    <div id="content">
+    <div id="content" class="hidden">
            
+            <div id="footer" class="">
+                    <div id="footer-spacer" style="width:100%; height:75vh"></div>
+                    
+            </div> 
     </div>
 
-    <div id="footer" class="">
-        <div id="footer-spacer" style="width:100%; height:75vh"></div>
-        
-    </div>
+    
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

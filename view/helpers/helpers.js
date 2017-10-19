@@ -37,6 +37,14 @@
         section.append("<br><hr>");
         return section;
     }
+    let BuildWorkExperienceItem = function(data,color="light"){
+        return $("<div>",{class:"WorkExperienceItem "+color}).append(
+            label(
+                $("<div>",{class:"WorkExperienceLeft "+color}).html("<b>"+data.name+"</b><br>"+data.time),
+                $("<div>",{class:"WorkExperienceRight "+color}).html("<b>"+data.possition+"</b><br>"+data.details),
+                "WorkExperience",color)
+        )
+    }
 
 
 
@@ -100,14 +108,7 @@
 // Helper functions 
     let barStatic = false;
     let lastSelection = "#Profile-Button";
-    let BuildWorkExperienceItem = function(data,color="light"){
-        return $("<div>",{class:"WorkExperienceItem "+color}).append(
-            label(
-                $("<div>",{class:"WorkExperienceLeft "+color}).html("<b>"+data.name+"</b><br>"+data.time),
-                $("<div>",{class:"WorkExperienceRight "+color}).html("<b>"+data.possition+"</b><br>"+data.details),
-                "WorkExperience",color)
-        )
-    }
+
     let offset = function(fliped = false){
         if($(window).width() < 700-16){
             return ((fliped)?0:54);
@@ -123,7 +124,7 @@
         };
     };
     let updateWidth = function(){
-        if($(window).width() < 700-16){
+        if($(window).width() < 701){
             $('#nav-content').addClass('hidden');
             $('#nav-btn').removeClass('hidden');
             $('nav').removeClass('side-nav').addClass('header-nav');
@@ -138,10 +139,10 @@
             $('nav').removeClass('nav-fixed').addClass('nav-relative');
         }else{
             $('nav').removeClass('nav-relative').addClass('nav-fixed');
-        };
+        }
     };
     let toggleMenu = function(bool = null){
-        if($(window).width() < 700-16){
+        if($(window).width() < 701){
             let nav = $('#nav-content')
             if( bool == null){
                 nav.toggleClass('hidden');
