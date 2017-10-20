@@ -60,8 +60,25 @@ config.Contacts = [
   },
 
 ]
-
 config.Projects = [
+  makeExperience("TradeBot","2017","Pandas - Python - Nodejs - MachineLearning - WebSockets",null,
+  `In this project I am trying to create a bot that will be able to trade on the crypto
+   exchange bittrex.com. This project is teaching how to designe, build, train and deploy
+    neral network models. I have also tought my self pandas which helps me with the large data 
+    sets that the exchange generate. In order to test the models I have build a local nodejs server 
+    to act as a intermediat layer for the bot to trade on whith fake money. Future goals of this project 
+    are to move the operation onto a remote server and build a gui interface for monitoring the preformance.
+    `),
+    makeExperience("Custom View Controllers","2017", "IOS - Swift", "www.github.com",
+  `
+  This project was a result of starting the company Findas. In the creation of the ios app the built in view controllers
+  did not provide the amount of cutomisation needed to build the user interface designing in ower paper plans, so I created 
+  my own. Some of the chalanges where getting the same preformance in my customly build controllers as the apple ones. After much tweaking
+  I was able to get the same proformance from mine that apple provided.
+  `)
+]
+
+config.ProjectCells = [
   {
     name: "Test",
     link: "github.com",

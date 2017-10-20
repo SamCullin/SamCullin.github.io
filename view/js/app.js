@@ -23,8 +23,8 @@ let build = function(){
             .append(
                 SectionBody("Experiences",color)
                 .append(
-                    SubSection("Education","Experiences",color).append(BuildWorkExperience(config.Education,color)),
-                    SubSection("Careers","Experiences",color).append(BuildWorkExperience(config.WorkExperience,color))
+                    SubSection("Education","Experiences",color).append(BuildTextSection(config.Education,color)),
+                    SubSection("Careers","Experiences",color).append(BuildTextSection(config.WorkExperience,color))
                 )
             );
     }("mild");
@@ -43,12 +43,13 @@ let build = function(){
 
     let Projects = function(color){
         return Section("Projects","",color)
-            .append(
+            .append(SectionBody("Projects",color).append(
                 SubSection("","Projects",color).append(
-                    BuildProjectSection(config.Projects,color)
+                
+                    BuildTextSection(config.Projects,color)
                     
                 )
-            );
+            ));
     }("mild");
 
     let FooterSection = function(color){
@@ -74,6 +75,7 @@ let build = function(){
     setTimeout(finishedBuilding, 500);
 }
 updateWidth();
+updateHeight();
 build();
 
 

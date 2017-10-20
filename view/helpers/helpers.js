@@ -14,15 +14,15 @@
         })
         return section;
     }
-    let BuildWorkExperience = function(data,color="light"){
-        let section = SectionBody("WorkExperience",color)
+    let BuildTextSection = function(data,color="light"){
+        let section = SectionBody("TextSection",color)
         data.forEach(item => {
-            section.append(BuildWorkExperienceItem(item,color));
+            section.append(BuildTextItem(item,color));
         })
         return section
     }
-    let BuildProjectSection = function(data,color="light"){
-        let section = $("<div>",{class:"ProjectSection "+color});
+    let BuildCellSection = function(data,color="light"){
+        let section = $("<div>",{class:"CellSection "+color});
         data.forEach(item=> {
             section.append(Cell(item,color))
         })
@@ -37,10 +37,10 @@
         section.append("<br><hr>");
         return section;
     }
-    let BuildWorkExperienceItem = function(data,color="light"){
+    let BuildTextItem = function(data,color="light"){
         return $("<div>",{class:"WorkExperienceItem "+color}).append(
             label(
-                $("<div>",{class:"WorkExperienceLeft "+color}).html("<b>"+data.name+"</b><br>"+data.time),
+                $("<div>",{class:"WorkExperienceLeft "+color}).html("<b class='h4'>"+data.name+"</b><br>"+data.time),
                 $("<div>",{class:"WorkExperienceRight "+color}).html("<b>"+data.possition+"</b><br>"+data.details),
                 "WorkExperience",color)
         )
@@ -133,6 +133,12 @@
             $('#nav-content').removeClass('hidden');
             $('nav').removeClass('header-nav').addClass('side-nav');
         }
+    }
+    let updateHeight = function(){
+        var height = $('#head').outerHeight();
+        console.log(height);
+        $('#head').css({'height':height+''});
+        $('#footer').css({'height':height+''});
     }
     let updateHeader = function(scroll){
         if(scroll < $('#Profile-section').offset().top-offset(true)){
