@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="view/css/general-styles.css">
+    <link rel="stylesheet" href="view/css/general-styles.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="view/css/print-styles.css" type="text/css" media="print" />
     <link rel="stylesheet" href="view/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
     
     <div id="head" class="fullHeight">
-            <div id="loader"></div>
-            <div id="particles-js" class=""></div>
+            <div id="loader" class="screen"></div>
+            <div id="particles-js" class="screen"></div>
             <div id="header-title" class="">
                     <h1 class="darkForGround center">Sam Cullin</h1>
                     <hr>
                     <h2 class="darkForGround center">Software Engineer</h2>
             </div>
     </div>
-    <div id="start-button" class="dark">
+    <div id="printer" class="screen dark">
+        <img src="./view/images/print.png" id="print-image" class="screen"/>
+    </div>
+    <div id="start-button" class="dark screen">
             <img src="./view/images/upArrow.png" id="upArrow" class="center-horizonal"/>
     </div>
-    <nav class="dark hidden">
+    <nav class="dark hidden screen">
         <div id="nav-btn" class="hidden"><img class="dark" src="view/images/menu.png"/></div>
         <div id="nav-content" class="hidden">
             <ul class="dark">
@@ -40,7 +44,8 @@
             
     </div>
     <div id="footer" class="hidden">
-            <div id="footer-spacer" style="width:100%; height:75vh"></div>
+            <div id="footer-spacer" class="screen"></div>
+            
             
     </div> 
 

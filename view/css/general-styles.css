@@ -219,11 +219,35 @@
 
 /* Footer CSS */
 #footer>.section{padding-right: 10%; padding-left: 10%;}
-#footer-spacer{height: 75vh; width: 100%;}
+#footer-spacer{height: 75%; width: 100%;}
 #footer{height: 100vh;padding: 0;}
 
 
+/* PrintButton */
+#printer{
+    position: fixed;
+    bottom: -40px;
+    left: -40px;
+    height: 80px;
+    width: 80px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg); 
+    
+}
+#print-image{
+    width: 26px;
+    height: 26px;
+    background: transparent;
+    display: block;
+    margin:auto;
+    filter: invert(100%);-webkit-filter: invert(100%);
+}
+
 /* Other */
+    .print{
+        display: none;
+    }
     .Profile-Image{
         display: block;
         width:100%;

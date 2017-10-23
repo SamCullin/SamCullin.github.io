@@ -80,6 +80,9 @@ build();
 
 
 $(document).ready(function(){
+    $('#printer').click(function(){
+        window.print();
+    });
     $('#nav-btn').click(function(){
        toggleMenu();
     });
