@@ -41,22 +41,26 @@ config.Contacts = [
   {
     icon: "./view/images/email.png",
     text: "Email",
+    print: "Sam@miplace.com",
     link: "mailto:sam@miplace.com?subject=SamCullin.Github.io&body=Hey Sam!! %0A%0Aname:%0Aemail:%0Anumber:%0Acompany:%0Adetails:%0A%0AKind Regards {{name}}%0A%0A"
   },
   {
     icon: "./view/images/linkedin.png",
     text: "Linked In",
-    link: "https://www.linkedin.com/in/sam-cullin-ba6b70144/"
+    link: "https://www.linkedin.com/in/sam-cullin-ba6b70144/",
+    print: "https://www.linkedin.com/in/sam-cullin-ba6b70144/"
   },
   {
     icon: "./view/images/github.png",
     text: "GitHub",
-    link: "https://www.github.com/SamCullin"
+    link: "https://www.github.com/SamCullin",
+    print: "https://www.github.com/SamCullin"
   },
   {
     icon: "./view/images/twitter.png",
     text: "Twitter",
-    link: "https://www.twitter.com/Sam_Cullin"
+    link: "https://www.twitter.com/Sam_Cullin",
+    print: "https://www.twitter.com/Sam_Cullin"
   },
 
 ]

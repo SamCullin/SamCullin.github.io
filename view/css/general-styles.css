@@ -73,6 +73,7 @@
         background-attachment: fixed;
         background-size: cover;
         background-position: center center !important;
+        background-size: 100%;
         background-repeat: no-repeat !important;
         background-attachment: fixed;
         width:100%;
@@ -218,9 +219,18 @@
 
 
 /* Footer CSS */
-#footer>.section{padding-right: 10%; padding-left: 10%;}
-#footer-spacer{height: 75%; width: 100%;}
-#footer{height: 100vh;padding: 0;}
+#footer{
+    position: relative;
+}
+#footer>.section{
+    padding-right: 10%; 
+    padding-left: 10%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+
 
 
 /* PrintButton */
