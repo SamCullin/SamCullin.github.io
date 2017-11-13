@@ -12,26 +12,22 @@ config.Profile = {
   name: "Sam Cullin",
   age: "21",
   location: "3127, Melbourne, Australia",
-  about: `
-  A passionate graduate with a drive to learn and create. 
+  about: `A passionate graduate with a drive to learn and create. 
   Always looking for places to improve upon and learn.  
   With no lack of persistence and drive. 
   Which I have shown through my own personally motivated projects.
   More experience than the average graduate having brought a full 
-  stack system to market with a small team of like minded passionate people.
-  `,
+  stack system to market with a small team of like minded passionate people.`,
   img: ""
 }
 config.Education = [
   makeExperience("Camberwell Grammar", "2010-2015", "High School", null,
-  `
-  I graduated highschool, where I enjoyed doing science, math and arts.
+  `I graduated highschool, where I enjoyed doing science, math and arts.
    I realized in my third year of school that I wanted to do something with software,
     and so I started a CCNA vet cource which was my introduction into programing.
   `),
   makeExperience("Software Engineering", "2015-Now", "RMIT University",null,
-  `
-  The education was mainly in PHP, C and java, but I also learned about SQL, 
+  `The education was mainly in PHP, C and java, but I also learned about SQL, 
   MVC, UML and more. Here I learned about the importance of OOP , code 
   resuablitiy and user experience and design.
   `)
@@ -74,8 +70,7 @@ config.Projects = [
     are to move the operation onto a remote server and build a gui interface for monitoring the preformance.
     `),
     makeExperience("Custom View Controllers","2017", "IOS - Swift", "www.github.com",
-  `
-  This project was a result of starting the company Findas. In the creation of the ios app the built in view controllers
+  `This project was a result of starting the company Findas. In the creation of the ios app the built in view controllers
   did not provide the amount of cutomisation needed to build the user interface designing in ower paper plans, so I created 
   my own. Some of the chalanges where getting the same preformance in my customly build controllers as the apple ones. After much tweaking
   I was able to get the same proformance from mine that apple provided.
