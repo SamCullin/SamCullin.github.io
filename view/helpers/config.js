@@ -12,25 +12,14 @@ config.Profile = {
   name: "Sam Cullin",
   age: "21",
   location: "3127, Melbourne, Australia",
-  about: `A passionate graduate with a drive to learn and create. 
-  Always looking for places to improve upon and learn.  
-  With no lack of persistence and drive. 
-  Which I have shown through my own personally motivated projects.
-  More experience than the average graduate having brought a full 
-  stack system to market with a small team of like minded passionate people.`,
+  about: `A passionate 3rd-year software engineering student with a drive to learn and create.Always looking for places to improve upon and learn. With no lack of persistence and drive.Which I have shown through my own personally motivated projects.More experience than the average graduate having brought a full stack system to market with a small team of like-minded passionate people.`,
   img: ""
 }
 config.Education = [
   makeExperience("Camberwell Grammar", "2010-2015", "High School", null,
-  `I graduated highschool, where I enjoyed doing science, math and arts.
-   I realized in my third year of school that I wanted to do something with software,
-    and so I started a CCNA vet cource which was my introduction into programing.
-  `),
+  `I graduated high school, where I enjoyed doing science, math and arts. I realized in my third year of school that I wanted to do something with software, and so I started a CCNA vet course which was my introduction to programing.`),
   makeExperience("Software Engineering", "2015-Now", "RMIT University",null,
-  `The education was mainly in PHP, C and java, but I also learned about SQL, 
-  MVC, UML and more. Here I learned about the importance of OOP , code 
-  resuablitiy and user experience and design.
-  `)
+  `The education was mainly in PHP, C and java, but I also learned about SQL, MVC, UML and more. Here I learned about the importance of OOP, code reusability and user experience and design.`)
 ]
 
 config.Contacts = [
@@ -62,19 +51,9 @@ config.Contacts = [
 ]
 config.Projects = [
   makeExperience("TradeBot","2017","Pandas - Python - Nodejs - MachineLearning - WebSockets",null,
-  `In this project I am trying to create a bot that will be able to trade on the crypto
-   exchange bittrex.com. This project is teaching how to designe, build, train and deploy
-    neral network models. I have also tought my self pandas which helps me with the large data 
-    sets that the exchange generate. In order to test the models I have build a local nodejs server 
-    to act as a intermediat layer for the bot to trade on whith fake money. Future goals of this project 
-    are to move the operation onto a remote server and build a gui interface for monitoring the preformance.
-    `),
+  `In this project, I am trying to create a bot that will be able to trade on the crypto exchange bittrex.com. This project is teaching how to design, build, train and deploy neural network models. I have also taught myself pandas which helps me with the large data sets that the exchange generate. In order to test the models, I had to build a local node js server to act as an intermediate layer for the bot to trade on with fake money. Future goals of this project are to move the operation onto a remote server and build a GUI interface for monitoring the performance.`),
     makeExperience("Custom View Controllers","2017", "IOS - Swift", "www.github.com",
-  `This project was a result of starting the company Findas. In the creation of the ios app the built in view controllers
-  did not provide the amount of cutomisation needed to build the user interface designing in ower paper plans, so I created 
-  my own. Some of the chalanges where getting the same preformance in my customly build controllers as the apple ones. After much tweaking
-  I was able to get the same proformance from mine that apple provided.
-  `)
+  `This project was a result of starting the company Findas. In the creation of the ios app, the built-in view controllers did not provide the amount of customisation needed to build the user interface designing in ower paper plans, so I created my own. Some of the challenges were getting the same performance in my custom built controllers as the apple ones. After much tweaking,  I was able to get the same performance from mine that Apple provided.`)
 ]
 
 config.ProjectCells = [
@@ -101,9 +80,9 @@ config.ProjectCells = [
 ]
 config.WorkExperience = [
   makeExperience("Findas","2016-Now","Founder",null,
-  "This was a personal project that I took on with a group of friends. This is where I learnt swift, firebase and the google cloud platform. I also tutored my friends teaching them how to code for the first time."),
+  "This was a personal project that I took on with a group of friends. This is where I learnt swift, node js, firebase and the Google cloud platform. During this project,  I worked with my friends to teach them how to code then go on to write an ios application. An IOS application that helps its users finds nearby bars, nightclubs and bottle shop.  I also tutored my friends teaching them how to code for the first time. I learnt a lot about working with teams and playing to each other strengths as well as creating more readable code. "),
   makeExperience("DieCut","2014-Now","General Hand",null,
-  "Die Cut is my family owned mettal cutting buissness. From this small buisness I learnt about customer satisfaction and customer retention.")
+  "DieCut Engineering is a small family owned steel profile cutting business, which I have been casually employed at for two years now. My time at DieCut as given me my most beneficial work experience. It has taught me a lot about keeping a business running from managing employees to automation. Because it is a family owned business I have been able to move around the business and gain experience in a number of different areas. Some of which include deliveries, working on the floor, programming and customer enquires.")
 ]
 
 config.Skills = {
