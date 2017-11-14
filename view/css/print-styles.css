@@ -69,16 +69,20 @@ nav, #start-button,#head,.screen{display: none;}
 .RatingTag	    {width:	120px}
 .rateDot        {height: 12px;width: 12px;}
 .rateDotGray    {filter: invert(70%);-webkit-filter: invert(70%);}
-.sam-label{overflow: hidden;}
-.label-title{display:inline-block;vertical-align: top;}
-.label-text{display:inline-block;}
-.icon-label-outer{}
-.icon-label-inner{width: 150px;margin:0 auto;}
-.icon-icon-label{width:40px;height:40px;}
-.link-icon-label{vertical-align: center;text-align: center;}
+.sam-label      {overflow: hidden;}
+.label-title    {display:inline-block;vertical-align: top;}
+.label-text     {display:inline-block;}
+.icon-label-outer{width: 50%}
+.icon-label-inner{margin:0 auto;}
+.icon-icon-label{width:40px;height:40px;display: inline-block;}
+.link-icon-label{vertical-align: center;text-align: center;display: inline-block;}
+.text-icon-label{width: 100%;}
 .section-body{padding-left: 2%;}
 .section{padding-right: 5%;padding-left: 5%;}
 .Footer-Section{width:80%;}
 .col-item{width: 50%;}
 .label-title{width:20%;}
 .label-text{width:80%;}
+*[href]:after {
+    content: none !important;
+  }

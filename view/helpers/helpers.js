@@ -32,7 +32,7 @@
         let section = $('<div>',{class: "Footer-Section "+color})
         .append("<hr>");
         data.forEach(item=>{
-            section.append(iconlabel(item.icon,item.text,item.link,"col-item",color));
+            section.append(iconlabel(item.icon,item.text,item.link,item.print,"col-item",color));
         })
         section.append("<br><hr>");
         return section;
@@ -68,14 +68,16 @@
                     $("<div>",{class:"label-text "+color}).html(text)
                 )
     }
-    let iconlabel = function(icon,text,link,classes="col-item",color="light"){
+    let iconlabel = function(icon,text,link,print,classes="col-item",color="light"){
         return $('<div>',{class: "icon-label-outer "+classes+" "+color})
             .append(
                 $('<div>',{class: "icon-label-inner "+color}).append(
-                $("<img>",{class:"icon-icon-label "+color,src: icon}),
-                $("<a>",{class:"link-icon-label "+color}).html(text)
-                .attr('href', link)
-            )).attr('href', link)
+                    $("<img>",{class:"icon-icon-label "+color,src: icon}),
+                    $("<a>",{class:"link-icon-label screen "+color}).html(text)
+                    .attr('href', link)
+                ),
+                $('<p>',{class: "text-icon-label print "+color}).html(print)
+            ).attr('href', link)
     }
     let Cell = function(data,color="light"){
         return $("<div>",{id:data.name,class:"Cell-Outer col-item "+color})
@@ -90,14 +92,14 @@
             .append(
                 $('<p>',{class:"Rating-Tag "+color}).html(key),
                 RatingDots(num,color)
-            )
+            );
     }
     let RatingDots = function(num,color="light"){
-        let content = $('<div>',{class:"Rating-Dots "+color})
+        let content = $('<div>',{class:"Rating-Dots "+color});
         for(var i=0;i<10;i++){
             let dot = $("<img>",{"class":"Rate-Dot ",src:"./view/images/dot.png"});
             if(i>=num){
-                dot.addClass("Rate-Dot-Gray")
+                dot.addClass("Rate-Dot-Gray");
             }
             content.append(dot);
         }
@@ -149,7 +151,7 @@
     };
     let toggleMenu = function(bool = null){
         if($(window).width() < 701){
-            let nav = $('#nav-content')
+            let nav = $('#nav-content');
             if( bool == null){
                 nav.toggleClass('hidden');
             }else if(bool == true){
