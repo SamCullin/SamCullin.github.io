@@ -9,7 +9,9 @@ let build = function(){
                 .append(
                     SubSection("Sam Cullin","Profile",color)
                         .append(label(
-                            $("<img>",{class: "Profile-Image",src:"view/images/FindasLogo.png"}),
+                            $("<div>",{class: "Profile-Image-Container"}).append(
+                            $("<img>",{class: "Profile-Image",src:"view/images/profile_photo.JPG"})
+                            ),
                             BuildProfileSection(config.Profile,color),
                         "Profile",
                         "Profile-Label",

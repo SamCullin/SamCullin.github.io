@@ -256,6 +256,7 @@
     -ms-transform: rotate(45deg); /* IE 9 */
     -webkit-transform: rotate(45deg); /* Safari */
     transform: rotate(45deg); 
+    z-index: 1000;
     
 }
 #print-image{
@@ -271,12 +272,19 @@
     .print{
         display: none;
     }
+    .Profile-Image-Container{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: none;
+    }
     .Profile-Image{
         display: block;
-        width:100%;
+        width: 100%;
+        
+
         margin: auto;
-        max-width: 150px;
-        max-height: 150px;
+        border-radius: 50%;
     }
     #content{box-sizing: border-box; width: 100%;}
     .WorkExperienceItem{padding-bottom: 15px;}
