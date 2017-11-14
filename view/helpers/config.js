@@ -79,20 +79,6 @@ config.ProjectCells = [
   }
 ]
 config.WorkExperience = [
-  makeExperience("Findas","2016-Now","Founder",null,`
-    This was a personal project that I took on with a group of friends. 
-    This is where I learnt swift, firebase and the google cloud platform. 
-    I also tutored my friends teaching them how to code for the first time.
-  `),
-  makeExperience("DieCut","2014-Now","General Hand",null,`
-    DieCut Engineering is a small family owned steel profile cutting business, 
-    which I have been casually employed at for two years now. My time at DieCut 
-    as given me my most beneficial work experience. It has taught me a lot about 
-    keeping a business  running from managing employees to book keeping. Because it 
-    is a family owned business I have been able to move around the business and gain
-    experience in a number of different areas. Some of which include  deliveries,
-    working on the floor, programing and and customer enquires.
-  `)
   makeExperience("Findas","2016-Now","Founder",null,
   "This was a personal project that I took on with a group of friends. This is where I learnt swift, node js, firebase and the Google cloud platform. During this project,  I worked with my friends to teach them how to code then go on to write an ios application. An IOS application that helps its users finds nearby bars, nightclubs and bottle shop.  I also tutored my friends teaching them how to code for the first time. I learnt a lot about working with teams and playing to each other strengths as well as creating more readable code. "),
   makeExperience("DieCut","2014-Now","General Hand",null,
