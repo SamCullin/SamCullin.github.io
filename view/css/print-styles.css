@@ -40,7 +40,6 @@ nav, #start-button,#head,.screen{display: none;}
 }
 
 .section{
-    page-break-inside: avoid;
     width: 100%;
     padding-bottom: 5px;
     padding-right: 10%;
@@ -70,7 +69,7 @@ nav, #start-button,#head,.screen{display: none;}
     text-align: center;
     color: lightgrey;
 }
-.Sub-Section    {padding-bottom: 30px;}
+.Sub-Section    {padding-bottom: 20px;page-break-inside: avoid;}
 .Footer-Section {margin:auto;}
 .col-item       {display: inline-block;}
 .center         {text-align: center;}
