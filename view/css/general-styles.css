@@ -153,7 +153,8 @@
 /* General */
     .section{
         width: 100%;
-        padding-bottom: 30px;
+        padding-top: 15px;
+        padding-bottom: 0px;
         padding-right: 10%;
         padding-left: 10%;
     }
@@ -167,14 +168,18 @@
         text-align: center;
         color: lightgrey;
     }
-    .Sub-Section{padding-bottom: 30px;}
+    .Sub-Section{padding-bottom: 20px;}
     .Footer-Section{margin:auto;}
     .col-item{display: inline-block;}
+    .col-sm-item{display: inline-block;}
     .center{text-align: center;}
     .hiden{display: none;}
 
 /*Label*/
     .sam-label{overflow: hidden;}
+    .profile-label{
+        padding-bottom: 5px;
+    }
     .label-title{
         display:inline-block;
         vertical-align: top;
@@ -192,6 +197,11 @@
     .link-icon-label{
         vertical-align: center;
         text-align: center;
+    }
+    .LabelTag {
+        border-radius: 5px;
+        margin: 0;
+
     }
 
 /* Cell item */
@@ -314,6 +324,9 @@
 	.col-item{
 		width: 100%;
     }
+    .col-sm-item{
+		width: 50%;
+    }
     .label-title{width:100%;}
     .label-text{width:100%;}
 }
@@ -347,7 +360,10 @@
 	}
 	.Footer-Section{
 		width:80%;
-	}
+    }
+    .col-sm-item{
+		width: 33%;
+    }
 	.col-item{
 		width: 50%;
     }

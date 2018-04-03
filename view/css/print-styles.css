@@ -41,13 +41,13 @@ nav, #start-button,#head,.screen{display: none;}
 
 .section{
     width: 100%;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
     padding-right: 10%;
     padding-left: 10%;
 }
 .Section-Title{
     margin: 0;
-    padding-top: 5px;
+    padding-top: 3px;
     text-align: center;
 }
 .Profile-Image-Container{
@@ -69,7 +69,14 @@ nav, #start-button,#head,.screen{display: none;}
     text-align: center;
     color: lightgrey;
 }
-.Sub-Section    {padding-bottom: 20px;page-break-inside: avoid;}
+.profile-label{padding-bottom: 5px;}
+.LabelTag       {margin: 1px;}
+.col-sm-item    {width:33%;display: inline-block;}
+.Sub-Section    {padding-bottom: 5px;page-break-inside: avoid;}
+.WorkExperienceItem {padding-bottom: 5px;}
+.SubSection-Title{margin-top:10px !important;margin-bottom: 10px !important;}
+hr{margin-top:5px !important;margin-bottom: 10px !important;}
+.section        {page-break-inside: avoid; }
 .Footer-Section {margin:auto;}
 .col-item       {display: inline-block;}
 .center         {text-align: center;}
@@ -82,7 +89,7 @@ nav, #start-button,#head,.screen{display: none;}
 .RatingTag	    {width:	120px}
 .rateDot        {height: 12px;width: 12px;}
 .rateDotGray    {filter: invert(70%);-webkit-filter: invert(70%);}
-.sam-label      {overflow: hidden;}
+.sam-label      {overflow: hidden;padding-bottom:5px;}
 .label-title    {display:inline-block;vertical-align: top;}
 .label-text     {display:inline-block;}
 .icon-label-outer{width: 50%}

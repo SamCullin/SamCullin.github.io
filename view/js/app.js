@@ -3,14 +3,14 @@ particlesJS('particles-js',config.particle);
 
 let build = function(){
     let ProfileSection = function(color){
-        return Section("Profile","",color)
+        return Section("Resume","Sam Cullin",color)
             .append(
-                SectionBody("Profile",color)
+                SectionBody("Resume",color)
                 .append(
-                    SubSection("Sam Cullin","Profile",color)
+                    SubSection("Profile","Resume",color)
                         .append(label(
                             $("<div>",{class: "Profile-Image-Container"}).append(
-                            $("<img>",{class: "Profile-Image",src:"view/images/profile_photo.JPG"})
+                                $("<img>",{class: "Profile-Image",src:"view/images/profile_photo2.JPG"})
                             ),
                             BuildProfileSection(config.Profile,color),
                         "Profile",
@@ -20,13 +20,15 @@ let build = function(){
             );
     }("light");
 
+
+
     let WorkExperienceSection = function(color){
-        return Section("Experiences","",color)
+        return Section("Experience","",color)
             .append(
-                SectionBody("Experiences",color)
+                SectionBody("Experience",color)
                 .append(
-                    SubSection("Education","Experiences",color).append(BuildTextSection(config.Education,color)),
-                    SubSection("Careers","Experiences",color).append(BuildTextSection(config.WorkExperience,color))
+                    SubSection("Education","Experience",color).append(BuildTextSection(config.Education,color)),
+                    SubSection("Work","Experience",color).append(BuildTextSection(config.WorkExperience,color))
                 )
             );
     }("mild");
@@ -66,9 +68,9 @@ let build = function(){
     $('#content').append
     (
         ProfileSection,
-        WorkExperienceSection,
+        Projects,
         SkillSection,
-        Projects
+        WorkExperienceSection
     );
 
     $('#footer').append(
@@ -83,22 +85,27 @@ build();
 
 $(document).ready(function(){
     $('#printer').click(function(){
+        $('#Experience-section').insertBefore($('#Abilities-section')); 
+        $('#Contact-section').insertBefore($('#Abilities-section'));
         window.print();
+        $('#Experience-section').insertAfter($('#Abilities-section'));
+        $('#Contact-section').appendTo($('#footer'));
+
     });
     $('#nav-btn').click(function(){
        toggleMenu();
     });
     $("#start-button").click(function(){
         $('html,body').animate({
-            scrollTop: scrollLocation('#Profile-section')}, 700);
+            scrollTop: scrollLocation('#Resume-section')}, 700);
     });
     $("#Profile-Button").click(function(){
         $('html,body').animate({
-            scrollTop: scrollLocation('#Profile-section')}, 700);
+            scrollTop: scrollLocation('#Resume-section')}, 700);
     });
     $("#Experience-Button").click(function(){
         $('html,body').animate({
-            scrollTop: scrollLocation('#Experiences-section')}, 700);
+            scrollTop: scrollLocation('#Experience-section')}, 700);
     });
     $("#Skills-Button").click(function(){
         $('html,body').animate({
@@ -116,17 +123,12 @@ $(document).ready(function(){
         toggleMenu(true);
         var scroll = $(window).scrollTop() + offset();
         updateHeader(scroll);
-        if(scroll < $('#Experiences-section').offset().top){
-            changeButtons("#Profile-Button");
-        }else if(scroll < $('#Abilities-section').offset().top){
-            changeButtons("#Experience-Button");
-        }else if(scroll < $('#Projects-section').offset().top){
-            changeButtons("#Skills-Button");
-        }else if(scroll < $('#footer').offset().top){
-            changeButtons("#Projects-Button");
-        }else{
-            changeButtons("#Contact-Button");
-        }
+
+        if      (scroll < $('#Projects-section').offset().top)  {changeButtons("#Profile-Button");
+        }else if(scroll < $('#Abilities-section').offset().top) {changeButtons("#Projects-Button");
+        }else if(scroll < $('#Experience-section').offset().top){changeButtons("#Abilities-Button");
+        }else if(scroll < $('#footer').offset().top)            {changeButtons("#Experience-Button");
+        }else                                                   {changeButtons("#Contact-Button");}
     });
     $(window).resize(function(){
         updateWidth();

@@ -2,16 +2,24 @@
     let BuildProfileSection = function(data,color="light"){
         return SectionBody("Profile",color)
         .append(
-            label("<b>Age</b>",data.age, "Profile","",color),
-            label("<b>Location</b>",data.location,"Profile","",color),
-            label("<b>About</b>",data.about,"Profile","",color)
+            label("<b>Age</b>",data.age,"Profile","Age",'profile-label',color),
+            label("<b>Location</b>",data.location,"Profile","Location",'profile-label',color),
+            label("<b>About</b>",data.about,"Profile","About",'profile-label',color),
+            label("<b>Key Skills</b>",BuildTagsSection("Profile",data.keyskills,color),"Profile","Skills",'profile-label',color)
         )
+    }
+    let BuildTagsSection = function(id,data,color="light"){
+        let section = $("<div>")
+        data.forEach(item => {
+            section.append($("<div>",{class:"col-sm-item "+color}).html("<p class='LabelTag'>"+item+"</p>"));
+        });
+        return section;
     }
     let BuildRatingSection = function(id,data,color="light"){
         let section = SectionBody(id, color)
         Object.entries(data).forEach(([key,Value])=> {
-        section.append(RatingItem(key,Value,"col-item",color));
-        })
+            section.append(RatingItem(key,Value,"col-item",color));
+        });
         return section;
     }
     let BuildTextSection = function(data,color="light"){
@@ -33,7 +41,7 @@
         .append("<hr>");
         data.forEach(item=>{
             section.append(iconlabel(item.icon,item.text,item.link,item.print,"col-item",color));
-        })
+        });
         section.append("<br><hr>");
         return section;
     }
@@ -42,8 +50,8 @@
             label(
                 $("<div>",{class:"WorkExperienceLeft "+color}).html("<b class='h4'>"+data.name+"</b><br>"+data.time),
                 $("<div>",{class:"WorkExperienceRight "+color}).html("<b>"+data.possition+"</b><br>"+data.details),
-                "WorkExperience",color)
-        )
+                "WorkExperience","WorkExpreience",color=color)
+        );
     }
 
 
@@ -61,11 +69,11 @@
     let SectionBody = function(id, classes = "light"){
         return $('<div>',{id: id+"-body", class:"section-body "+classes});}
 
-    let label = function(title,text,location, classes = "",color="light"){
-        return $('<div>',{id:title+"-"+location,class:"sam-label "+classes+" "+color})
+    let label = function(left,right,location, id="", classes="",color="light"){
+        return $('<div>',{id:id+"-"+location,class:"sam-label "+classes+" "+color})
                 .append(
-                    $("<div>",{class:"label-title "+color}).html(title),
-                    $("<div>",{class:"label-text "+color}).html(text)
+                    $("<div>",{class:"label-title "+color}).html(left),
+                    $("<div>",{class:"label-text "+color}).html(right)
                 )
     }
     let iconlabel = function(icon,text,link,print,classes="col-item",color="light"){
@@ -143,7 +151,7 @@
         $('#footer').css({'height':height+''});
     }
     let updateHeader = function(scroll){
-        if(scroll < $('#Profile-section').offset().top-offset(true)){
+        if(scroll < $('#Resume-section').offset().top-offset(true)){
             $('nav').removeClass('nav-fixed').addClass('nav-relative');
         }else{
             $('nav').removeClass('nav-relative').addClass('nav-fixed');
@@ -166,7 +174,7 @@
     };
     let finishedBuilding = function(){
         $('#loader').addClass('hidden');
-        console.log("did click loader");
+        console.log("Finished loading");
         $(window).scrollTop(0);
         $('#header-title').animate({
             top:'17%',
