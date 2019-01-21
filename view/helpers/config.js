@@ -10,39 +10,27 @@ var makeExperience = function(name,time,possition, link,details){
 }
 config.Profile = {
   name: "Sam Cullin",
-  age: "21",
+  age: "22",
   location: "Melbourne, Australia, 3127",
-  about: `A passionate 3rd-year Software Engineering student with a drive to learn and create. Outside of University, I have a created a multi-user development environment for a social media startup and Big Data projects.  Through these projects, I have learned languages such as Python, Swift, and NodeJS, and gained considerable experience with Agile development, Pandas, NumPy, Jupyter, and Docker.`,
+  //about: `A passionate 4th-year Software Engineering student with a drive to learn and create. Outside of University, I have started a consulting company and worked on several personaly driven projects. I have gained experency in app and server development. a created a multi-user development environment for my consulting startup Findas. Through my startup I have learnt   Through these projects, I have learned languages such as Python, Swift, and NodeJS, and gained considerable experience with Agile development, Pandas, NumPy, Jupyter, and Docker.`,
+  about:"A passionate 4th-year Software Engineering student with a drive to innovate and create. Outside of University, I have started a software development company and delivered several projects, which has given me real-world experience in software development,  working with clients and delivering business outcomes.",
   img: "",
   keyskills: [
-  'Docker',
+  'Collaboration',
+  'Mentoring',
+  'Full Stack',
   'Database Design',
   'Rest APIs',
-  'C',
-  'Swift',
-  'SQL',
+  'Cross-Platform',
+  'Agile',
+  'Big Data',
   'Python',
   'NodeJS',
-  'Pandas',
-  'NumPy',
-  'Collaboration',
-  'Mentoring']
+  'Hive',
+  'React-Native',
+  ]
 }
 
-config.KeySkills = [
-  'Docker',
-  'Database Design',
-  'Rest APIs',
-  'C',
-  'Swift',
-  'SQL',
-  'Python',
-  'NodeJS',
-  'Pandas',
-  'Numpy',
-  'Collaboration',
-  'Mentoring'
-]
 
 config.Education = [
   makeExperience("Camberwell Grammar", "2010-2015", "High School", null,
@@ -91,6 +79,8 @@ config.Contacts = [
 
 ]
 config.Projects = [
+  makeExperience("Rebate Engine","", "SQL - Python - Hive - Scala", null,
+  `During my time at Telstra, I worked on the Rebate Recommendation Engine which was a big data project that queried data from the big data platform (BUD) and aggregates it into a small note that is pushed to the front of house teams. The note includes information about why the customer is or is not approved for a rebate. We also converted our outputs to JSON formats so that they could be consumed by other projects. The Telstra 24*7 app now consumes our outputs to help customer self serve rebates.`),
   makeExperience("Automated Systems ","","Pandas - Python - TALib - MongoDB - WebSockets",null,
   `In this project, I have created a bot to monitor cryptocurrency exchanges. I have applied a layered design with plug-in microservices. I have learned about managing and analyzing large amounts of data, backtesting strategies, collaborative coding, and rapid development.`),
   makeExperience("Custom View Controllers","", "IOS - Swift", null,
@@ -127,6 +117,8 @@ config.ProjectCells = [
 config.WorkExperience = [
   makeExperience("Findas Pty Ltd.","2016-Now","Founder",null,
   "This was a personal project I founded with a group of like-minded people. Findas is an App to help travelers find places of interest. I taught myself Swift, NodeJS, Firebase, and the Google cloud platform. I led architecture design and tutored others to lift team capability. This project introduced me to working in a long-term team and reaching parallel goals, as well as creating more comprehensive code. Though the app is not yet released, it is in the final stages and we are looking at a release mid-2018"),
+  makeExperience("Telstra","2018-Now","Data Analyst",null,
+  `From my experience at Telstra, I learnt about the world of support tickets, project budgets and cross-team collaboration. I worked on several project primary writing bash, python and SQL. I automated tasks and wrote queries to search Telstra's big data lakes.`),
   makeExperience("DieCut","2014-2017","General Hand",null,
   "DieCut Engineering is a small family-owned steel profile cutting business, which I have been casually employed at as general hand for two years. My time at DieCut has taught me about business management, with jobs such as managing employees and automation. Given it is a family owned business, I have been able to move around and gain experience in a number of different areas within the company. I now have experience in areas that include, customer service, workflow optimization, web development, deliveries and working on the factory floor.")
 ]
