@@ -1,7 +1,7 @@
 # Sam Cullin, BSoftEng
 
-**Mobile:** [+61 XXX XXX XXX](tel:+61000000000)  
-**Email:** [sam@xxxxx.xxx](mailto:sam@xxxxx.xxx)  
+**Mobile:** [+61000000000](tel:+61000000000)  
+**Email:** [sam@example.com](mailto:sam@example.com)  
 **LinkedIn:** [linkedin.com/in/sam-cullin](https://www.linkedin.com/in/sam-cullin/)
 
 
@@ -10,16 +10,16 @@
 Engineering Leader with 8+ years of experience scaling high-performance teams and delivering cloud-native platforms. Proven track record of structuring and coaching cross-functional squads, aligning technical roadmaps to business goals, and fostering inclusive, high-trust engineering cultures. Skilled in stakeholder management, end-to-end delivery, and operating within startup timeframes.
 
 
-## Key Skills
+## Professional Skills
 
-- **Leadership:** Team hiring & coaching · technical mentorship · roadmap ownership · stakeholder alignment · triad partnership with Product & Design · strategic leadership · collaboration
-- **Customer:** B2B relationship management · enterprise engagement · requirements discovery · customer-centric delivery · onboarding & support · feedback integration
-- **AI:** AI feature integration · prompt engineering · LLM-driven enrichment · AI developer tooling · tool evaluation & experimentation
-- **Big Data:** Data pipelines · real-time & batch processing · dashboards & visualization · data transformation · analytics tooling · BI enablement
-- **Infrastructure:** Cloud-native systems · infrastructure automation · cost-efficient scaling · resilient architecture · resource optimization · infrastructure as code · data & network security
-- **Platform:** CI/CD pipelines · GitOps workflows · environment consistency · observability & monitoring · developer tooling · deployment templates · application standards
-- **Backend:** Distributed systems · API design · microservices · event-driven architecture · secure backends · data modelling
-- **Frontend:** Scalable UI architecture · responsive design · accessibility · performance optimization · design system collaboration · UX flows
+- **Team Leadership:** Proven ability to scale high-performing, collaborative engineering teams while aligning technical execution with company strategy and culture.
+- **Stakeholder & Relationship Management:** Skilled in building trust and alignment across cross-functional teams, executives, and external partners to drive customer-centric delivery.
+- **Technical Strategy:** Experienced in shaping and executing short- and long-term technology roadmaps that balance innovation with operational excellence.
+- **End-to-End Delivery:** Deep expertise across the full product lifecycle—from frontend UX and accessibility to backend distributed systems and API design.
+- **AI & Cloud Platforms:** Track record of architecting and deploying AI-powered and cloud-native platforms that deliver scalable business value.
+- **Data Engineering & Analytics:** Proficient in designing real-time and batch data pipelines, leveraging analytics and BI tools to drive data-informed decisions.
+- **Infrastructure & Developer Experience:** Innovative in building resilient, observable infrastructure and internal platforms that accelerate developer velocity and reliability.
+
 
 ## Education
 
@@ -30,7 +30,9 @@ Engineering Leader with 8+ years of experience scaling high-performance teams an
 | Cisco       | CCNA4: Certified Network Associate               | 2014          |
 
 ## Personal Projects
+Curious, creative, and deeply technical, I’m a developer who thrives on solving complex problems through code. I’m an explorer at heart — drawn to novel experiences and new technologies — and I bring that mindset to everything I build. Whether training AI models to simulate terrain, orchestrating Kubernetes clusters at home, or crafting tools in Rust and Go, I love diving into the unknown and figuring things out. I’m a problem solver who just happens to code, with a focus on clean architecture, thoughtful automation, and a constant drive to learn better ways to build.
 
+### Selected Projects
 - **AI Terrain Modeling:** Developed and implemented a U-Net model to algorithmically generate realistic terrain from Perlin noise, exploring advanced procedural generation techniques applicable to simulation or digital content creation.
 - **Covert AI Agents:** Created a multi-agent simulation to assess agents ability to covertly manipulate other agents to gain advantage.
 - **Crypto Automation:** Developed an automated trading bot to stream exchange data and rebalance Uniswap v3 pool liquidity.

@@ -1,0 +1,9 @@
+[project]
+name = "resume"
+version = "0.0.0"
+description = "Sam Cullin's Resume"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "resume-md>=1.0.14",
+]

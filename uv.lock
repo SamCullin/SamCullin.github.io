@@ -1,0 +1,23 @@
+version = 1
+revision = 2
+requires-python = ">=3.12"
+
+[[package]]
+name = "resume"
+version = "0.0.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "resume-md" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "resume-md", specifier = ">=1.0.14" }]
+
+[[package]]
+name = "resume-md"
+version = "1.0.14"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a6/87/676ddc54654d311aea11da3b771ade684c42d3c961944b4e072c06d9b995/resume_md-1.0.14.tar.gz", hash = "sha256:10930e63fba270cde90fec839faad6b6cd802769d273fd779f42473fff2b90e1", size = 13347, upload-time = "2025-05-13T01:34:35.885Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1d/e8/e69db423c96be867e30f0e09afb7cff777136859104d992851b833e67d1f/resume_md-1.0.14-py3-none-any.whl", hash = "sha256:3b0622cd27513d81c7e81ca66add89c9e785d46d51f1e99ccdddbc1a26d7c108", size = 12326, upload-time = "2025-05-13T01:34:34.186Z" },
+]
