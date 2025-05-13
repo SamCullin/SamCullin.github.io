@@ -1,5 +1,7 @@
 # Sam Cullin, BSoftEng
 
+**Mobile:** [+61 XXX XXX XXX](tel:+61000000000)  
+**Email:** [sam@xxxxx.xxx](mailto:sam@xxxxx.xxx)  
 **LinkedIn:** [linkedin.com/in/sam-cullin](https://www.linkedin.com/in/sam-cullin/)
 
 
