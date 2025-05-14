@@ -7,7 +7,7 @@
 
 ## Profile
 
-Engineering Leader with 8+ years of experience scaling high-performance teams and delivering cloud-native platforms. Proven track record of structuring and coaching cross-functional squads, aligning technical roadmaps to business goals, and fostering inclusive, high-trust engineering cultures. Skilled in stakeholder management, end-to-end delivery, and operating within startup timeframes.
+Engineering Leader with 8+ years of experience scaling high-performance teams and delivering cloud-native platforms, with a strong focus on emerging technologies including Artificial Intelligence. Proven track record of structuring and coaching cross-functional squads, aligning technical roadmaps to business goals, and fostering inclusive, high-trust engineering cultures. Skilled in stakeholder management, end-to-end delivery, and operating within startup timeframes.
 
 
 ## Professional Skills
@@ -21,38 +21,18 @@ Engineering Leader with 8+ years of experience scaling high-performance teams an
 - **Infrastructure & Developer Experience:** Innovative in building resilient, observable infrastructure and internal platforms that accelerate developer velocity and reliability.
 
 
-## Education
-
-| Institution | Qualification                                    | Year          |
-|-------------|--------------------------------------------------|---------------|
-| HarvardX    | Artificial Intelligence with Python              | 2025 – Present|
-| RMIT        | Bachelor of Software Engineering                 | 2016 – 2020   |
-| Cisco       | CCNA4: Certified Network Associate               | 2014          |
-
-## Personal Projects
-Curious, creative, and deeply technical, I’m a developer who thrives on solving complex problems through code. I’m an explorer at heart — drawn to novel experiences and new technologies — and I bring that mindset to everything I build. Whether training AI models to simulate terrain, orchestrating Kubernetes clusters at home, or crafting tools in Rust and Go, I love diving into the unknown and figuring things out. I’m a problem solver who just happens to code, with a focus on clean architecture, thoughtful automation, and a constant drive to learn better ways to build.
-
-### Selected Projects
-- **AI Terrain Modeling:** Developed and implemented a U-Net model to algorithmically generate realistic terrain from Perlin noise, exploring advanced procedural generation techniques applicable to simulation or digital content creation.
-- **Covert AI Agents:** Created a multi-agent simulation to assess agents ability to covertly manipulate other agents to gain advantage.
-- **Crypto Automation:** Developed an automated trading bot to stream exchange data and rebalance Uniswap v3 pool liquidity.
-- **Rust Tooling:** Created a CLI and gRPC backend for secure environment variable management using Rust.
-- **Home Kubernetes Cluster:** Set up home automation and a media server on a self-managed K8s cluster.
-- **Terminal LLM CLI:** Built a Golang-based CLI chatbot with access to terminal and file system for reduced dev context switching.
-
-
 ## Employment History
 
 ### FSCO — Web3 & AI Fintech
 #### Senior Software Engineer → Tech Lead
 ##### [fsco.io](https://fsco.io) | 2020 – 2025
 
-* Built and scaled a high-performing 7-engineer full-stack team in Brisbane, setting technical direction and defining product vision, while fostering a high-trust, no-blame culture that encouraged innovation.
-* Effectively mediated team disagreements, supported team development with mentorship, and implemented paired programming and code reviews, which fostered a more aligned and collaborative environment and improved team productivity.
-* Managed client and partner relationships while leading the integration of a food producer with a blockchain platform, balancing delivery goals with platform constraints and influencing partner roadmap improvements.
-* Led core platform migration to AWS + Kubernetes with an event-driven architecture, achieving significant improvements: reduced latency (800ms to 50ms), increased release frequency (via CI/CD & trunk-based development), and enhanced mainline stability and security through containerized test environments and end-to-end testing.
-* Led architecture of Hiiro, an LLM-backed OCR engine converting unstructured documents into structured datasets, after evaluating trade-offs between cloud OCR services and custom NLP pipelines for performance and cost.
-* Owned production incident recovery, post-mortem analysis, and process redesign following production outages, resulting in safeguards that fully mitigated similar future risks.
+* Built and scaled a 7-engineer full-stack team in Brisbane, defining technical and product direction while fostering a high-trust, innovative culture.
+* Mediated team conflicts, mentored engineers, and introduced paired programming and code reviews, boosting collaboration and productivity.
+* Managed client and partner relationships, leading blockchain integration for a food producer while aligning delivery with platform constraints and influencing partner roadmaps.
+* Spearheaded platform migration to AWS + Kubernetes with event-driven architecture, cutting latency (800ms to 50ms), increasing release frequency via CI/CD, and improving stability and security through containerized testing.
+* Architected Hiiro, an LLM-backed OCR engine to convert unstructured documents into structured datasets, optimizing performance and cost after evaluating cloud OCR and custom NLP pipelines.
+* Led incident recovery, post-mortems, and process redesign after outages, implementing safeguards to prevent recurrence.
 
 
 ### Telstra Corporation — Australia's National Telco
@@ -75,4 +55,27 @@ Curious, creative, and deeply technical, I’m a developer who thrives on solvin
 * Led QA/UAT cycles and provided Level 3 production support to ensure reliability and rapid issue resolution.
 * Built a blockchain proof-of-concept app using VeChain + React to enable POS reward redemption with smart contract validation.
 * Regularly presented on Hyperledger Fabric and blockchain fundamentals at Melbourne Blockchain meetups, engaging with a diverse audience of developers and enthusiasts.  
+
+
+## Education
+
+| Institution | Qualification                                    | Year          |
+|-------------|--------------------------------------------------|---------------|
+| HarvardX    | Artificial Intelligence with Python              | 2025 – Present|
+| RMIT        | Bachelor of Software Engineering                 | 2016 – 2020   |
+| Cisco       | CCNA4: Certified Network Associate               | 2014          |
+
+## Outside of Work
+When not tinkering with ESP32 home automations or playing mechanic, I’m outdoors—camping, 4WDing, or relearning rock climbing. I experiment with cooking, diving into the science of food’s effects on body and mind. I also enjoy deep chats with my partner about psychology and human behavior. Whether debugging systems or exploring the human brain, I’m fascinated by what makes things tick.
+
+## Personal Projects
+A curious, technical developer, I thrive on solving complex problems through code. With an explorer’s mindset, I build using Rust, Go, and AI, focusing on clean architecture and automation. From training AI for terrain simulation to orchestrating home Kubernetes clusters, I dive into the unknown to create and learn.
+
+### Selected Projects
+- **AI Terrain Modeling:** Built a U-Net model to generate realistic terrain from Perlin noise for simulations.
+- **Covert AI Agents:** Simulated multi-agent systems to study covert manipulation strategies.
+- **Crypto Automation:** Created a trading bot to manage Uniswap v3 pool liquidity.
+- **Rust Tooling:** Developed a CLI and gRPC backend for secure environment variable management.
+- **Home Kubernetes Cluster:** Set up home automation and media server on a self-managed K8s cluster.
+- **Terminal LLM CLI:** Built a Golang CLI AI chatbot with terminal and file system access for developers.
 
