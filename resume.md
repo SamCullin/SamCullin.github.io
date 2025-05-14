@@ -56,6 +56,7 @@ Engineering Leader with 8+ years of experience scaling high-performance teams an
 * Built a blockchain proof-of-concept app using VeChain + React to enable POS reward redemption with smart contract validation.
 * Regularly presented on Hyperledger Fabric and blockchain fundamentals at Melbourne Blockchain meetups, engaging with a diverse audience of developers and enthusiasts.  
 
+[page-break]: # 
 
 ## Education
 
@@ -65,10 +66,14 @@ Engineering Leader with 8+ years of experience scaling high-performance teams an
 | RMIT        | Bachelor of Software Engineering                 | 2016 – 2020   |
 | Cisco       | CCNA4: Certified Network Associate               | 2014          |
 
+
 ## Outside of Work
+
 When not tinkering with ESP32 home automations or playing mechanic, I’m outdoors—camping, 4WDing, or relearning rock climbing. I experiment with cooking, diving into the science of food’s effects on body and mind. I also enjoy deep chats with my partner about psychology and human behavior. Whether debugging systems or exploring the human brain, I’m fascinated by what makes things tick.
 
+
 ## Personal Projects
+
 A curious, technical developer, I thrive on solving complex problems through code. With an explorer’s mindset, I build using Rust, Go, and AI, focusing on clean architecture and automation. From training AI for terrain simulation to orchestrating home Kubernetes clusters, I dive into the unknown to create and learn.
 
 ### Selected Projects
