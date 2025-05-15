@@ -7,7 +7,7 @@
 
 ## Profile
 
-Engineering Leader with 8+ years of experience scaling high-performance teams and delivering cloud-native platforms, with a strong focus on emerging technologies including Artificial Intelligence. Proven track record of structuring and coaching cross-functional squads, aligning technical roadmaps to business goals, and fostering inclusive, high-trust engineering cultures. Skilled in stakeholder management, end-to-end delivery, and operating within startup timeframes.
+Engineering leader with over 8 years of experience in scaling high-performance teams and delivering cloud-native platforms, with a strong emphasis on emerging technologies, including artificial intelligence. Proven track record in structuring and coaching cross-functional squads, aligning technical roadmaps with business goals, and fostering inclusive, high-trust engineering cultures. Skilled in stakeholder management, end-to-end delivery, and operating within startup timelines.
 
 
 ## Professional Skills
@@ -25,7 +25,7 @@ Engineering Leader with 8+ years of experience scaling high-performance teams an
 
 ### FSCO — Web3 & AI Fintech
 #### Senior Software Engineer → Tech Lead
-##### [fsco.io](https://fsco.io) | 2020 – 2025
+##### [fsco.io](https://fsco.io) | 2020 - 2025
 
 * Built and scaled a 7-engineer full-stack team in Brisbane, defining technical and product direction while fostering a high-trust, innovative culture.
 * Mediated team conflicts, mentored engineers, and introduced paired programming and code reviews, boosting collaboration and productivity.
@@ -37,7 +37,7 @@ Engineering Leader with 8+ years of experience scaling high-performance teams an
 
 ### Telstra Corporation — Australia's National Telco
 #### Data Analyst → Cloud Architect
-##### [telstra.com](https://telstra.com) | 2018 – 2020
+##### [telstra.com](https://telstra.com) | 2018 - 2020
 
 * Partnered with Telstra PM to deploy a rebate engine, embedding rebate eligibility into the front-of-house dashboard and eliminating customer wait times for eligibility confirmation.
 * Designed security compliant (tfsec) infrastructure-as-code (Terraform) modules for big data platform's on-prem to AWS migration.
@@ -47,7 +47,7 @@ Engineering Leader with 8+ years of experience scaling high-performance teams an
 
 ### Findas Pty Ltd — Software Development Studio
 #### Founder & Lead Developer
-##### 2017 – 2021
+##### 2017 - 2021
 
 * Founded and ran a small development company; managed hiring, client engagement, project delivery, and budgeting across multiple SaaS and mobile products, resulting in on-time delivery projects.
 * Delivered Gotya, a social iOS app in swift, from concept to App Store launch within 4 weeks by coordinating a 4-developer team on an accelerated timeline.
@@ -62,19 +62,14 @@ Engineering Leader with 8+ years of experience scaling high-performance teams an
 
 | Institution | Qualification                                    | Year          |
 |-------------|--------------------------------------------------|---------------|
-| HarvardX    | Artificial Intelligence with Python              | 2025 – Present|
-| RMIT        | Bachelor of Software Engineering                 | 2016 – 2020   |
+| HarvardX    | Artificial Intelligence with Python              | 2025 - Present|
+| RMIT        | Bachelor of Software Engineering                 | 2016 - 2020   |
 | Cisco       | CCNA4: Certified Network Associate               | 2014          |
-
-
-## Outside of Work
-
-When not tinkering with ESP32 home automations or playing mechanic, I’m outdoors—camping, 4WDing, or relearning rock climbing. I experiment with cooking, diving into the science of food’s effects on body and mind. I also enjoy deep chats with my partner about psychology and human behavior. Whether debugging systems or exploring the human brain, I’m fascinated by what makes things tick.
 
 
 ## Personal Projects
 
-A curious, technical developer, I thrive on solving complex problems through code. With an explorer’s mindset, I build using Rust, Go, and AI, focusing on clean architecture and automation. From training AI for terrain simulation to orchestrating home Kubernetes clusters, I dive into the unknown to create and learn.
+A curious, technical developer, I thrive on solving complex problems through code. With an explorer's mindset, I build using Rust, Go, and AI, focusing on clean architecture and automation. From training AI for terrain simulation to orchestrating home Kubernetes clusters, I dive into the unknown to create and learn.
 
 ### Selected Projects
 - **AI Terrain Modeling:** Built a U-Net model to generate realistic terrain from Perlin noise for simulations.
@@ -83,4 +78,8 @@ A curious, technical developer, I thrive on solving complex problems through cod
 - **Rust Tooling:** Developed a CLI and gRPC backend for secure environment variable management.
 - **Home Kubernetes Cluster:** Set up home automation and media server on a self-managed K8s cluster.
 - **Terminal LLM CLI:** Built a Golang CLI AI chatbot with terminal and file system access for developers.
+
+## Outside of Work
+
+When not tinkering with ESP32 home automations or playing mechanic, I'm outdoors—camping, 4WDing, or relearning rock climbing. I experiment with cooking, diving into the science of food's effects on body and mind. I also enjoy deep chats with my partner about psychology and human behavior. Whether debugging systems or exploring the human brain, I’m fascinated by what makes things tick.
 
