@@ -1,7 +1,7 @@
 # Sam Cullin, BSoftEng
 
-**Mobile:** [+61000000000](tel:+61000000000)  
-**Email:** [sam@example.com](mailto:sam@example.com)  
+**Mobile:** [+61000000000](tel:+61000000000)
+**Email:** [sam@example.com](mailto:sam@example.com)
 **LinkedIn:** [linkedin.com/in/sam-cullin](https://www.linkedin.com/in/sam-cullin/)
 
 
@@ -54,16 +54,16 @@ Engineering leader with over 8 years of experience in scaling high-performance t
 * Designed and shipped a high-availability AWS-based eCommerce platform for an optometry client, migrating thousands of products from legacy systems.
 * Led QA/UAT cycles and provided Level 3 production support to ensure reliability and rapid issue resolution.
 * Built a blockchain proof-of-concept app using VeChain + React to enable POS reward redemption with smart contract validation.
-* Regularly presented on Hyperledger Fabric and blockchain fundamentals at Melbourne Blockchain meetups, engaging with a diverse audience of developers and enthusiasts.  
+* Regularly presented on Hyperledger Fabric and blockchain fundamentals at Melbourne Blockchain meetups, engaging with a diverse audience of developers and enthusiasts.
 
-[page-break]: # 
+[page-break]: #
 
 ## Education
 
 | Institution | Qualification                                    | Year          |
 |-------------|--------------------------------------------------|---------------|
-| HarvardX    | Artificial Intelligence with Python              | 2025 - Present|
-| RMIT        | Bachelor of Software Engineering                 | 2016 - 2020   |
+| HarvardX    | [Artificial Intelligence with Python](https://certificates.cs50.io/5ac69b09-e426-40ac-b5e9-552079809a0b.png?size=A4)              | 2025          |
+| RMIT        | [Bachelor of Software Engineering](https://www.myequals.net/sharelink/b5e41928-7654-40e3-b9dc-910688c14a61/568af706-298a-4957-b966-e4216e81adf5)                 | 2016 - 2021   |
 | Cisco       | CCNA4: Certified Network Associate               | 2014          |
 
 
@@ -82,4 +82,3 @@ A curious, technical developer, I thrive on solving complex problems through cod
 ## Outside of Work
 
 When not tinkering with ESP32 home automations or playing mechanic, I'm outdoors—camping, 4WDing, or relearning rock climbing. I experiment with cooking, diving into the science of food's effects on body and mind. I also enjoy deep chats with my partner about psychology and human behavior. Whether debugging systems or exploring the human brain, I’m fascinated by what makes things tick.
-
