@@ -17,16 +17,19 @@
           default = pkgs.mkShell {
             packages = with pkgs; [
               uv
+              nodejs_20  # Using Node.js 20 which is > v18
+              python3    # Python 3.x
+              python3Packages.pip  # Python package manager
+              curl
+              gnumake   # GNU Make
             ];
 
             shellHook = ''
               # Create and activate virtual environment if it doesn't exist
-              if [ ! -d .venv ]; then
-                uv python -m venv .venv
-              fi
+              uv venv
               source .venv/bin/activate
+              uv sync --all-extras
 
-              uv sync
               
             '';
           };

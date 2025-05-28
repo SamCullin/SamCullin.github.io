@@ -1,0 +1,3 @@
+[submodule "Resume-Matcher"]
+	path = Resume-Matcher
+	url = git@github.com:srbhr/Resume-Matcher.git

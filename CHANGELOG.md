@@ -9,3 +9,8 @@
 - Updated profile sections to include emerging technologies and AI.
 - Cutdown on working in FSCO work experience and personal projects.
 - Added details.md for a list of public references.
+
+## 28/05/2025
+- Updated resume-md to output ATS-friendly content.
+- Added ats-info flags to the resume to add language and framework experience that did not make it into the resume.
+- Added Resume-Matcher project to run through local ATS tests and optimizations.
