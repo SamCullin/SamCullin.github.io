@@ -15,9 +15,9 @@ requires-dist = [{ name = "resume-md", specifier = ">=1.0.14" }]
 
 [[package]]
 name = "resume-md"
-version = "1.2.2"
+version = "1.3.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/8d/12/9dd679fef93b7dad4d81b35fb3506279faca59085b764ee3648eba2fe776/resume_md-1.2.2.tar.gz", hash = "sha256:c11fe8fa3b728b69e41519c83eaca943ada5089f905f6273500397bd9cdc31e8", size = 18833, upload-time = "2025-05-28T01:11:45.575Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ad/82/f9e4206d6e069a28b0f50ed24f70364aaf4b91e1b1863c1e349c984c37e5/resume_md-1.3.0.tar.gz", hash = "sha256:779574de8ea608dff4cf2531a7b631b8d770fd76be9df5338cef2c0d03e45ada", size = 18902, upload-time = "2025-05-29T00:41:08.015Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e0/5b/342032b3e55423b5c3f47293d61bb330594bce689af5e660bf787440aa49/resume_md-1.2.2-py3-none-any.whl", hash = "sha256:ef5365d0a80b68b23044add434b265592eaf3a7b25d819d5fffe440e79629d58", size = 16342, upload-time = "2025-05-28T01:11:43.844Z" },
+    { url = "https://files.pythonhosted.org/packages/6e/c4/462f75b2f14627956fe372ba713cdf91bef22cee11f16a0f27f9bb41c203/resume_md-1.3.0-py3-none-any.whl", hash = "sha256:c00ed16c3a84362c2799c9c43462b00fbd209eb30a90ae2c3977ddb5d0ee051d", size = 16408, upload-time = "2025-05-29T00:41:05.995Z" },
 ]

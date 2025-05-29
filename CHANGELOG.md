@@ -14,3 +14,8 @@
 - Updated resume-md to output ATS-friendly content.
 - Added ats-info flags to the resume to add language and framework experience that did not make it into the resume.
 - Added Resume-Matcher project to run through local ATS tests and optimizations.
+
+## 29/05/2025
+- Updated resume-md package
+- Added education metadata to help ats degree recognition.
+    - Added Bachelor of Engineering (Software Engineering) to help with matching.
