@@ -11,7 +11,7 @@
 Engineering leader with over 8 years of experience in scaling high-performance teams and delivering cloud-native platforms, with a strong emphasis on emerging technologies, including artificial intelligence. Proven track record in structuring and coaching cross-functional squads, aligning technical roadmaps with business goals, and fostering inclusive, high-trust engineering cultures. Skilled in stakeholder management, end-to-end delivery, and operating within startup timelines.
 
 [ats-info]: # ([INFO] Current Location: Melbourne, Australia)
-[ats-info]: # ([INFO] Current Level: Senior Software Engineer)
+[ats-info]: # ([INFO] Current Level: Senior Individual Contributor / Technical Leader)
 [ats-info]: # ([INFO] Bachelor of Engineering (Software Engineering) is equivalent to a Bachelor of Science in Computer Science (B.CompSci).)
 
 ## Professional Skills
@@ -19,12 +19,14 @@ Engineering leader with over 8 years of experience in scaling high-performance t
 - **Team Leadership:** Proven ability to scale high-performing, collaborative engineering teams while aligning technical execution with company strategy and culture.
 - **Stakeholder & Relationship Management:** Skilled in building trust and alignment across cross-functional teams, executives, and external partners to drive customer-centric delivery.
 - **Technical Strategy:** Experienced in shaping and executing short to long term technology roadmaps that balance innovation with operational excellence.
+- **Customer Success:** Strong listening skills and ability to dive deep into customer problems and translate them into technical solutions.
 - **End-to-End Delivery:** Deep expertise across the full product lifecycle—from frontend UX and accessibility to backend distributed systems and API design.
 - **AI & Cloud Platforms:** Track record of architecting and deploying AI-powered and cloud-native platforms that deliver scalable business value.
 - **Data Engineering & Analytics:** Proficient in designing real-time and batch data pipelines, leveraging analytics and BI tools to drive data-informed decisions.
-- **Infrastructure & Developer Experience:** Innovative in building resilient, observable infrastructure and internal platforms that accelerate developer velocity and reliability.
+- **Infrastructure & Developer Experience:** Innovative in designing resilient, observable infrastructure and internal platforms that accelerate developer velocity and reliability.
 
 [ats-info]: # ([INFO] Soft Skills: growth mindset, accountability, communication, problem solving, collaboration.)
+[ats-info]: # ([INFO] Solution Architecture, Systems Engineering, Cloud Architecture, DevOps, CI/CD, Monitoring, Cost Optimization, Data Engineering, Cloud Computing, Technology Adoption, Professional Services)
 
 ## Employment History
 
@@ -34,17 +36,18 @@ Engineering leader with over 8 years of experience in scaling high-performance t
 
 * Built and scaled a 7-engineer full-stack team in Brisbane, defining technical and product direction while fostering a high-trust, innovative culture.
 * Mediated team conflicts, mentored engineers, and introduced paired programming and code reviews, boosting collaboration and productivity.
-* Managed client and partner relationships, leading blockchain integration for a food producer while aligning delivery with platform constraints and influencing partner roadmaps.
+* Managed client and partner relationships, leading blockchain integration for a food producer while aligning solutions with platform constraints and influencing partner roadmaps.
 * Spearheaded platform migration to AWS + Kubernetes with event-driven architecture, cutting latency (800ms to 50ms), increasing release frequency via CI/CD, and improving stability and security through containerized testing.
 * Architected Hiiro, an LLM-backed OCR engine to convert unstructured documents into structured datasets, optimizing performance and cost after evaluating cloud OCR and custom NLP pipelines.
 * Led incident recovery, post-mortems, and process redesign after outages, implementing safeguards to prevent recurrence.
 
 [ats-info]: # ([INFO] Programming Languages: python, typescript, solidity, sql, terraform, bash.)
 [ats-info]: # ([INFO] Libraries: pandas, numpy, nestjs, angular, react, flask, langchain.)
-[ats-info]: # ([INFO] Infrastructure: aws, kubernetes, fluxcd, vpc, subnets, security groups, lambda, s3, rds, aws bedrock, cloudfront, dynamodb, IAM, postgresql, redis, elasticsearch, kibana, logstash, sqs, rabbitmq, KeyCloak, blockchain.)
+[ats-info]: # ([INFO] Infrastructure: aws, kubernetes, fluxcd, vpc, subnets, security groups, lambda, s3, rds, aws bedrock, cloudfront, dynamodb, IAM, postgresql, redis, elasticsearch, kibana, logstash, sqs, rabbitmq, KeyCloak, blockchain, amazon web services.)
 [ats-info]: # ([INFO] DevOps: gitlab, datadog, grafana, prometheus, cicd, pipelines, cloudwatch, Sentry.)
-[ats-info]: # ([INFO] Architecture: event sourcing, cqrs, microservices, rest apis, openapi, rpc, Auto Scaling, oauth2, LLM Workflows.)
+[ats-info]: # ([INFO] Architecture: event sourcing, cqrs, microservices, rest apis, openapi, rpc, Auto Scaling, oauth2, LLM Workflows, logistics, supply chain, traceability.)
 [ats-info]: # ([INFO] Tools: postman, gitlab, postman, git, cursor, AI, foundry, docker, openai, LLM, AI/ML.)
+[ats-info]: # ([INFO] Soft Skills: mentorship, training )
 
 
 ### **Telstra Corporation** — Australia's National Telco
@@ -59,7 +62,7 @@ Engineering leader with over 8 years of experience in scaling high-performance t
 
 [ats-info]: # ([INFO] Programming Languages: Java, python, sql, bash, terraform.)
 [ats-info]: # ([INFO] Libraries: pandas, numpy, sprint boot, maven.)
-[ats-info]: # ([INFO] Infrastructure: step functions, lambda, sqs, ECS, EC2, VPC, Subnets, IAM, cloudformation, mysql, dynamodb, hive, hadoop, s3, spark.)
+[ats-info]: # ([INFO] Infrastructure: step functions, lambda, sqs, ECS, EC2, VPC, Subnets, IAM, cloudformation, mysql, dynamodb, hive, hadoop, s3, spark, aws services.)
 [ats-info]: # ([INFO] DevOps: bamboo, cloudwatch, New Relic, jenkins, AWS CI/CD, cron jobs.)
 [ats-info]: # ([INFO] Architecture: Big Data, ETL Pipelines, Cloud Migration, Dependency Injection, Auto Scaling, data processing.)
 [ats-info]: # ([INFO] Tools: postman, bitbucket, git, artifactory, docker, virtual machines, power bi.)
@@ -78,10 +81,12 @@ Engineering leader with over 8 years of experience in scaling high-performance t
 
 [ats-info]: # ([INFO] Programming Languages: swift, node, typescript, javascript, react, graphql, restapis, express.)
 [ats-info]: # ([INFO] Libraries: react, express.)
-[ats-info]: # ([INFO] Infrastructure: firebase, aws lambda, SQS, dynamodb, cloudfront, s3, terraform, cloudformation.)
+[ats-info]: # ([INFO] Infrastructure: firebase, aws lambda, SQS, dynamodb, cloudfront, s3, terraform, cloudformation, amazon web services.)
 [ats-info]: # ([INFO] DevOps: github actions, github, google analytics, sentry, cloudwatch.)
-[ats-info]: # ([INFO] Architecture: CRUD apps, serverless apps, RestAPIs, Blockchain, Immutability, Dependency Injection.)
+[ats-info]: # ([INFO] Architecture: CRUD apps, serverless apps, RestAPIs, Blockchain, Immutability, Dependency Injection, Enterprise Solutions.)
 [ats-info]: # ([INFO] Tools: postman, google maps api, VS code, XCode, git.)
+[ats-info]: # ([INFO] Soft Skills: mentorship, training, consulting, project management, customer success )
+
 
 [page-break]: #
 
@@ -121,3 +126,5 @@ A curious, technical developer, I thrive on solving complex problems through cod
 ## Outside of Work
 
 When not tinkering with ESP32 home automations or playing mechanic, I'm outdoors—camping, 4WDing, or relearning rock climbing. I experiment with cooking, diving into the science of food's effects on body and mind. I also enjoy deep chats with my partner about psychology and human behavior. Whether debugging systems or exploring the human brain, I’m fascinated by what makes things tick.
+
+[ats-info]: # ([INFO] Growth Mindset, Continuous Learning, Curious, Problem Solving, Data Driven Decisions)

@@ -19,3 +19,7 @@
 - Updated resume-md package
 - Added education metadata to help ats degree recognition.
     - Added Bachelor of Engineering (Software Engineering) to help with matching.
+
+## 02/06/2025
+- Added Customer Success to professional skills.
+- Added more ats-info flags for Solution Architect targeting.
