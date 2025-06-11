@@ -23,3 +23,6 @@
 ## 02/06/2025
 - Added Customer Success to professional skills.
 - Added more ats-info flags for Solution Architect targeting.
+
+## 11/06/2025
+- Updated about me section to focus on AI projects

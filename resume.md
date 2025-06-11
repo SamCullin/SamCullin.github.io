@@ -125,6 +125,6 @@ A curious, technical developer, I thrive on solving complex problems through cod
 
 ## Outside of Work
 
-When not tinkering with ESP32 home automations or playing mechanic, I'm outdoors—camping, 4WDing, or relearning rock climbing. I experiment with cooking, diving into the science of food's effects on body and mind. I also enjoy deep chats with my partner about psychology and human behavior. Whether debugging systems or exploring the human brain, I’m fascinated by what makes things tick.
+When I'm not pushing AI into places it probably shouldn't be or playing mechanic, I'm outdoors—camping, 4WDing, or relearning rock climbing. I experiment with cooking, diving into the science of food's effects on body and mind. I also enjoy deep chats with my partner about psychology and human behavior. Whether debugging systems or exploring the human brain, I’m fascinated by what makes things tick.
 
 [ats-info]: # ([INFO] Growth Mindset, Continuous Learning, Curious, Problem Solving, Data Driven Decisions)
