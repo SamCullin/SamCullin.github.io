@@ -94,6 +94,7 @@ Engineering leader with over 8 years of experience in scaling high-performance t
 
 | Credential  | Institution                                    | Date          |
 |-------------|--------------------------------------------------|---------------|
+| AWS AI Practitioner | AWS | 06/2025 - Current |
 | [Artificial Intelligence with Python](https://certificates.cs50.io/5ac69b09-e426-40ac-b5e9-552079809a0b.png?size=A4)   |   HarvardX            | 02/2025 - 04/2025          |
 | [Bachelor of Software Engineering (B.SoftEng)](https://www.myequals.net/sharelink/b5e41928-7654-40e3-b9dc-910688c14a61/568af706-298a-4957-b966-e4216e81adf5)         |     RMIT             | 01/2016 - 06/2021   |
 | CCNA4: Certified Network Associate        |     Cisco           | 01/2014 - 06/2014          |
