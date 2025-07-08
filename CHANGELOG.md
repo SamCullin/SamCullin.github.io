@@ -26,3 +26,9 @@
 
 ## 11/06/2025
 - Updated about me section to focus on AI projects
+
+## 09/07/2025
+- Fixed several wordings in the resume dot points
+- Added a couple more dot points to the resume
+- cut down on words in professional summary
+- Updated summary to indicate I am a senior individual contributor and technical leader rather than just leader
